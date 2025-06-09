@@ -1,0 +1,1202 @@
+[
+     {
+          "algorithm": [
+               "Design a robust action selection function that chooses an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function must effectively balance exploration of less frequently selected actions with the exploitation of actions that have exhibited higher historical performance. In the initial time slots, prioritize exploration to accumulate diverse performance information for all actions. As the time slots progress, gradually shift the focus toward exploitation, favoring actions with superior average scores. Implement a dynamic epsilon in the Epsilon-Greedy framework that evolves to encourage exploration early on and narrows down towards exploitation as total selections increase. Furthermore, integrate the Upper Confidence Bound (UCB) strategy to ensure that actions with limited selections are still considered, preventing the oversight of potentially valuable choices. The output of the function should be a valid action index (an integer ranging from 0 to 7) that aims to optimize long-term performance while adapting to the evolving performance landscape throughout the time slots."
+          ],
+          "code": null,
+          "objective": -449.9999999986435,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that dynamically chooses an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a sophisticated balance of exploration and exploitation, using an enhanced version of the Upper Confidence Bound (UCB) approach. Incorporate an exploration factor that promotes higher exploration rates during the initial time slots, allowing for a broad evaluation of actions. As the total selection count increases, this factor should gradually reduce, shifting focus towards actions with superior historical performance while ensuring a small constant level of exploration is maintained to adapt to any shifts in action effectiveness over time. The function must output a valid action index (an integer from 0 to 7) that aims to maximize long-term cumulative rewards while remaining flexible to learn from new data as it is gathered across the available time slots."
+          ],
+          "code": null,
+          "objective": -449.99999999863303,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an advanced action selection function that intelligently selects an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the given inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should effectively balance exploration of lesser-tried actions with the exploitation of high-performing actions. In the initial time slots, emphasize exploration to gather diverse performance data for each action. As time progresses and more performance metrics are available, shift the strategy towards exploitation to favor actions with higher average scores. Implement a dynamic epsilon for the Epsilon-Greedy approach that gradually reduces as time advances, facilitating a smooth transition from exploration to exploitation. Additionally, employ the Upper Confidence Bound (UCB) method to ensure that actions with fewer selections are adequately considered, maintaining a focus on their potential value. The output should be a valid action index (an integer between 0 and 7) that aims to maximize long-term performance while adapting to the changing performance dynamics across time slots."
+          ],
+          "code": null,
+          "objective": -449.99999999856954,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that effectively selects an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} by utilizing the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a refined exploration-exploitation strategy, significantly inspired by the Upper Confidence Bound (UCB) method. Prioritize exploration in the early time slots to gather diverse insights on action performance, adjusting the exploration factor as `total_selection_count` rises to emphasize actions with proven success rates. Ensure that the exploration factor decreases gradually but remains non-zero to capture any variations in action effectiveness over time. The function should return an action index that not only aims to maximize cumulative rewards in the long run but also allows for ongoing adaptation to newly acquired data across available time slots."
+          ],
+          "code": null,
+          "objective": -449.99999999851536,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an adaptive action selection function that determines the most suitable action index from the set {0, 1, 2, 3, 4, 5, 6, 7} using the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should strike an optimal balance between exploration and exploitation by leveraging a combination of strategies. Initially, during the early time slots, the function should prioritize exploration to gather comprehensive performance data across all actions. As time progresses, gradually transition toward exploitation, focusing on actions with higher average scores. \n\nImplement a time-varying epsilon mechanism within the Epsilon-Greedy framework, where epsilon decreases as `total_selection_count` increases, promoting a shift from exploration to exploitation. Alongside this, incorporate the Upper Confidence Bound (UCB) method to ensure that actions with fewer selections remain viable options, preventing the neglect of potentially high-value actions. The output must be a valid action index (an integer between 0 and 7) that optimally promotes long-term performance while dynamically adapting to the observed results over the time slots."
+          ],
+          "code": null,
+          "objective": -449.9999999985145,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that efficiently chooses an action index from the available set {0, 1, 2, 3, 4, 5, 6, 7} based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should effectively balance exploration of less-selected actions and exploitation of those with higher average historical scores. In initial time slots, encourage exploration by randomly selecting actions to gather sufficient data. As the selection count increases, progressively shift towards exploiting the highest-performing actions, while maintaining a mechanism for light exploration to adapt to changing performance dynamics. Utilize a combination of the Upper Confidence Bound (UCB) method to account for the confidence in estimated action values and a decreasing epsilon in the Epsilon-Greedy approach, ensuring systematic shifts from exploration to exploitation. The goal is to maximize cumulative rewards while adapting to the performance variations of actions over time. Ensure that the selected action index is returned as an integer within the range of 0 to 7."
+          ],
+          "code": null,
+          "objective": -449.9999999982179,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design a robust action selection function that efficiently determines the optimal action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should strike a balance between exploration of less-utilized actions and exploitation of high-performing ones. In the early time slots, focus on exploration to build a comprehensive dataset regarding each action's performance. As the time slots progress and more data is acquired, shift towards exploitation, favoring actions that demonstrate higher average scores. Incorporate a dynamic epsilon for the Epsilon-Greedy strategy that decreases over time, enabling a smooth transition to a more exploitative approach. Additionally, integrate the Upper Confidence Bound (UCB) framework to account for selection variance, ensuring that actions with fewer prior selections are given due consideration. The output must be a valid action index (an integer between 0 and 7) that maximizes expected long-term rewards while adapting to the evolving performance landscape over time slots."
+          ],
+          "code": null,
+          "objective": -449.99999999815884,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an advanced action selection function aimed at efficiently choosing the optimal action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should strategically balance exploration of less-frequently selected actions and exploitation of top-performing actions. In the initial time slots, emphasize exploration to gather informative data on each action's effectiveness. Gradually shift towards exploitation as more data becomes available, prioritizing actions with higher average scores. Implement a hybrid decision-making strategy that integrates elements from the Upper Confidence Bound (UCB) method and Epsilon-Greedy algorithm, utilizing a dynamic epsilon value that adjusts over time to transition from exploration to exploitation. Ensure that the function evaluates both the average score and selection variance for each action to enhance decision accuracy. The output must be a valid action index (an integer between 0 and 7) that optimizes expected long-term rewards while adapting to performance changes across time slots."
+          ],
+          "code": null,
+          "objective": -449.99999999809836,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an efficient action selection function that selects the optimal action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should effectively balance the need for exploration of underperforming actions with the exploitation of high-performing actions. In the early time slots, focus on exploring diverse actions to accumulate valuable data on their performance, while progressively shifting towards exploiting the highest-average scoring actions as more information becomes available. Employ a blended approach that combines strategies from the Upper Confidence Bound (UCB) method and an adaptive Epsilon-Greedy strategy, where the Epsilon value is dynamically adjusted to facilitate a smooth transition from exploration to exploitation. Ensure the function takes into account both the average score and the variability in performance among the actions to enhance selection accuracy. The output must be a valid action index (an integer between 0 and 7) that maximizes expected long-term rewards while remaining responsive to performance fluctuations throughout the time slots."
+          ],
+          "code": null,
+          "objective": -449.99999999807767,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Create an advanced action selection function that efficiently chooses an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should adeptly balance exploration of less-selected actions with exploitation of actions that have demonstrated higher average scores. In the initial stages, emphasize exploration to build a comprehensive understanding of each action's effectiveness. As the time progresses, strategically adjust towards exploitation by favoring actions with superior performance metrics. Implement a synergistic strategy that integrates aspects of both Upper Confidence Bound (UCB) and Epsilon-Greedy methodologies, featuring a dynamic epsilon value that steadily decreases as more data is gathered, allowing for a gradual shift from exploration to exploitation. Ensure the function calculates not only average scores but also the variance in performance and the number of selections for each action, facilitating informed decision-making. The output must be a valid action index (an integer between 0 and 7) that optimizes expected long-term gains while responsively adapting to variations in action performance over the time slots. Aim for a solution that promotes long-term learning and efficient resource allocation."
+          ],
+          "code": null,
+          "objective": -449.9999999980579,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Develop an action selection function that selects an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should effectively balance exploration and exploitation by employing a modified Upper Confidence Bound (UCB) strategy. Implement a dynamic exploration parameter that encourages exploration in the early time slots while gradually shifting focus to actions with higher historical performance as the total selection count increases. Ensure that the exploration parameter does not fully diminish, allowing for continued adaptability to changes in action effectiveness over time. The output should be a valid action index (an integer in the range of 0 to 7) that aims to maximize cumulative rewards while remaining responsive to evolving outcomes as data is accumulated across the available time slots."
+          ],
+          "code": null,
+          "objective": -449.9999999979526,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that selects an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} using the inputs: `score_set` (a dictionary mapping action indices to lists of historical scores), `total_selection_count` (total selections made), `current_time_slot` (current time slot), and `total_time_slots` (total available time slots). The function should strategically balance exploration and exploitation. In the early time slots, prioritize exploration by allowing random selection of actions to collect diverse data. As selections increase, shift focus towards exploiting actions with higher average scores, while still permitting a small percentage of exploratory selections to adapt to dynamic changes in action performance. Implement the Upper Confidence Bound (UCB) approach to estimate the potential of actions, augmented by a declining epsilon parameter for the Epsilon-Greedy method to guide exploration. The selected action should maximize expected rewards while being responsive to the observed performance trends. Return the action index as an integer within the range of 0 to 7."
+          ],
+          "code": null,
+          "objective": -449.99999999790265,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Develop an action selection function designed to choose the optimal action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a strategy that effectively balances the exploration of lesser-used actions and the exploitation of actions with higher average scores. In the early time slots, prioritize exploration to gather sufficient data by employing a random selection mechanism. As the action selection count increases, gradually shift the strategy towards exploitation by leveraging the actions with the highest average historical scores, while still incorporating a consistent level of exploration to adapt to potential changes in action performance. To achieve this, integrate the Upper Confidence Bound (UCB) method for confident estimations of action values and utilize a decaying epsilon approach to facilitate the transition from exploration to exploitation. The ultimate aim is to maximize cumulative rewards over time while remaining responsive to the dynamics of action effectiveness. Ensure that the output is a valid integer action index ranging from 0 to 7."
+          ],
+          "code": null,
+          "objective": -449.9999999978658,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design a flexible and efficient action selection function that determines the optimal action index from the options {0, 1, 2, 3, 4, 5, 6, 7} using the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a strategy that balances the trade-off between exploration (selecting less chosen actions) and exploitation (choosing actions with higher average scores). In early time slots, emphasize exploration to gather comprehensive data on all actions, while gradually transitioning towards exploitation in later slots to optimize performance based on the acquired knowledge. Utilize a dynamic epsilon value that decreases with the total number of selections to guide this transition, explicitly encouraging early exploration. Additionally, incorporate the Upper Confidence Bound (UCB) method to ensure that actions with fewer selections are still prioritized, thereby enabling the identification of hidden potentials among less favored choices. The ultimate goal is to return a valid action index (an integer from 0 to 7) that maximizes expected long-term rewards, adapting continuously to the performance metrics throughout the designated time slots."
+          ],
+          "code": null,
+          "objective": -449.9999999977191,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Develop an action selection function that intelligently chooses an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should balance exploration of less frequently chosen actions with the exploitation of actions that have historically performed better. In the initial time slots, prioritize exploration to gather comprehensive performance data for all actions, and as time progresses and total selections increase, gradually transition toward exploiting higher-performing actions. Employ a dynamic epsilon within the Epsilon-Greedy framework to facilitate high exploration rates early on, while the epsilon value should decrease over time to favor exploitation. Additionally, incorporate the Upper Confidence Bound (UCB) strategy to ensure that lesser-chosen actions are not neglected, maintaining a balance that promotes discovery of potentially beneficial actions. The output must be a valid action index (an integer between 0 and 7) that aims to maximize cumulative rewards while adapting to the changing performance characteristics across time slots."
+          ],
+          "code": null,
+          "objective": -449.99999999744733,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that intelligently selects an action index from the set of available actions {0, 1, 2, 3, 4, 5, 6, 7} based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a balanced approach between exploration and exploitation, utilizing the Upper Confidence Bound (UCB) method to assess the potential of each action, while incorporating a dynamic exploration parameter that decreases over time. This exploration parameter should encourage sufficient exploration during the initial time slots, then transition towards exploiting the actions with better historical performance as the total selection count increases. Ensure that a minimal level of exploration is maintained to adapt to any changes in action effectiveness as more data is gathered. The output should be a valid action index (an integer between 0 and 7) that aims to optimize cumulative rewards while being flexible to variations in action outcomes throughout the available time slots."
+          ],
+          "code": null,
+          "objective": -449.99999999729874,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that efficiently chooses an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} using the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should initially emphasize exploration to collect diverse performance data for each action during early time slots. As the total selections accumulate, the focus should gradually shift towards exploitation, favoring actions with higher average scores while mitigating the risk of settling on suboptimal options too early. Implement an adaptive approach that combines an Upper Confidence Bound (UCB) methodology to account for uncertainty in action value estimates and a decaying epsilon parameter from the Epsilon-Greedy strategy to dynamically adjust the exploration-exploitation balance over time. The goal is to optimize cumulative rewards over the course of the time slots, ensuring flexibility in response to changing action performance trends. Output the selected action index as an integer within the range of 0 to 7."
+          ],
+          "code": null,
+          "objective": -449.9999999972384,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that selects an action index from the set {0, 1, 2, 3, 4, 5, 6, 7}, based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should effectively balance exploration and exploitation strategies. In the initial time slots, prioritize exploration to gather data on the effectiveness of each action, and as the selection count rises, shift towards exploiting actions that have shown higher historical averages. Implement a method for uncertainty quantification, such as the Upper Confidence Bound (UCB) or a variant of Epsilon-Greedy strategy that dynamically adjusts the exploration rate. Ensure the epsilon value is designed to decrease over time, facilitating a gradual transition from exploration to exploitation while still allowing for the assessment of potentially high-performing new actions. The selected action index should aim to maximize the expected long-term rewards and adapt to performance changes over the selection process. Finally, make certain that the output is a valid action index, constrained to the integer range of 0 to 7."
+          ],
+          "code": null,
+          "objective": -449.9999999970935,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that strategically selects an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should adopt a strategy that balances exploration of less-frequented actions and exploitation of actions with higher average scores. In the early time slots, prioritize exploration to gather adequate data on all actions by randomly selecting among them. As the total selection count increases, gradually shift the focus towards exploiting actions with the best historical performance while incorporating uncertainty into the decision-making process. Implement this by utilizing a dynamic blend of the Upper Confidence Bound (UCB) technique to factor in the confidence level of estimated action values and a decreasing epsilon parameter from the Epsilon-Greedy method to allow for systematic exploration reduction over time. The ultimate aim is to maximize cumulative rewards throughout all time slots while remaining responsive to evolving performance indicators of each action. Ensure the output is an integer representing the selected action index within the range of 0 to 7."
+          ],
+          "code": null,
+          "objective": -449.99999999707376,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design a robust action selection function that identifies the optimal action index from the set {0, 1, 2, 3, 4, 5, 6, 7} using the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should focus on effectively balancing exploration of less-selected actions and exploitation of high-performing actions. In the early time slots, prioritize exploration to gather sufficient data on each action's performance. As time progresses, transition towards exploitation by favoring actions with higher average scores. Implement a hybrid strategy that combines elements of Upper Confidence Bound (UCB) and Epsilon-Greedy approaches, with an adaptive epsilon value that gradually decreases to shift focus from exploration to exploitation over time. Ensure that the function considers the variance and number of selections for each action in its decision-making. The function must return a valid action index (an integer between 0 and 7) that maximizes expected long-term rewards while effectively adapting to changes in action performance throughout the designated time slots."
+          ],
+          "code": null,
+          "objective": -449.9999999969978,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an adaptive action selection function that efficiently selects an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should initially emphasize exploration, especially in the early time slots, to effectively sample the performance of each action. As the time progresses and selection counts increase, the focus should gradually shift towards exploiting the highest-performing actions. Utilize a blended strategy of Upper Confidence Bound (UCB) and Epsilon-Greedy methods to achieve an optimal balance between exploration of uncertain actions and exploitation of those with proven success. Implement a dynamically adjusting epsilon parameter that decreases over the course of the time slots, thereby promoting continuous evaluation of underexplored actions while still prioritizing historically favorable ones. The output must be a valid action index (integer between 0 and 7) that aims to maximize long-term reward expectations, adapting to the changing performance metrics of available actions throughout the designated time slots."
+          ],
+          "code": null,
+          "objective": -449.999999996828,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that effectively chooses an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} using the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. This function should implement a hybrid strategy that balances the need for exploration of underutilized actions and the exploitation of high-performing actions based on historical performance data. Initially, encourage exploration by randomly selecting actions during early time slots. As the total selection count grows, shift towards exploiting actions that have demonstrated superior average scores, leveraging mechanisms such as the Upper Confidence Bound (UCB) for confidence-based selection and a diminishing epsilon parameter from the Epsilon-Greedy strategy to gradually reduce random exploration. The function should dynamically adapt to captured performance metrics, ensuring optimal action selection over time with the overarching goal of maximizing cumulative rewards across all time slots. Output the selected action index as an integer within the range of 0 to 7."
+          ],
+          "code": null,
+          "objective": -449.99999999656404,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Create an action selection function that efficiently selects an action index from the options {0, 1, 2, 3, 4, 5, 6, 7} based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function must effectively balance exploration and exploitation, particularly emphasizing exploration in the initial time slots to gain a thorough understanding of each action's performance. As the selection count increases, the approach should transition towards exploitation, favoring actions that demonstrate higher average scores while remaining cautious of settling too quickly on suboptimal options. To achieve this balance, consider implementing a modified version of the Upper Confidence Bound (UCB) method, which addresses the uncertainties associated with each action's effectiveness. Additionally, integrate a decreasing epsilon parameter for an Epsilon-Greedy strategy, allowing for controlled exploration as time progresses. The output should be a single action index (an integer between 0 and 7) that aims to maximize overall cumulative rewards while adapting to the changing performance of actions throughout the time slots."
+          ],
+          "code": null,
+          "objective": -449.99999999656217,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that determines the most suitable action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the following inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should strike a balance between exploration and exploitation. Begin by favoring exploration to gather a comprehensive understanding of each action's performance, particularly in earlier time slots. As the number of selections increases, smoothly transition towards exploitation by prioritizing actions with higher average scores while avoiding premature convergence on potentially suboptimal choices. Implement a mechanism such as Upper Confidence Bound (UCB) to assess uncertainties in action rewards, and enhance this with a decaying epsilon parameter for an Epsilon-Greedy strategy that adjusts the exploration rate over time. Ensure the chosen action index (an integer between 0 and 7) maximizes cumulative rewards as time progresses, remaining adaptable to variations in performance across the time slots."
+          ],
+          "code": null,
+          "objective": -449.99999999641614,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               " \nDesign an action selection function that effectively chooses an action index from the available options {0, 1, 2, 3, 4, 5, 6, 7} based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a balanced decision-making strategy that combines exploration of less-selected actions with the exploitation of high-performing actions. Use the Upper Confidence Bound (UCB) algorithm to evaluate each action's potential based on historical scores while integrating a dynamic exploration factor that diminishes over time. This factor should promote exploration during early time slots, gradually shifting focus to actions with proven effectiveness as selections accumulate. Ensure the approach maintains a baseline level of exploration at all times to remain responsive to shifts in action performance. The output should be a valid action index (an integer between 0 and 7) aimed at maximizing cumulative rewards while remaining adaptable to changing action dynamics throughout the entire time slot duration. \n"
+          ],
+          "code": null,
+          "objective": -449.9999999962586,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that effectively chooses an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function must implement a dynamic strategy that balances exploration of lesser-tried actions with exploitation of those that have shown higher effectiveness. In the initial time slots, prioritize exploration to gather sufficient data on each action's scores. As the time progresses, gradually increase the emphasis on exploiting actions that have historic scores indicating better performance. Utilize a hybrid approach combining techniques like Upper Confidence Bound (UCB) for measuring uncertainty and Epsilon-Greedy for facilitating a gradual shift in exploration habits. Design the epsilon parameter to adjust adaptively over time, allowing for fewer explorations as more data is collected, yet still enabling occasional exploration of underperformed or less-selected actions to potentially uncover new opportunities for improvement. Ensure that the final output is a valid action index (an integer between 0 and 7) that maximizes expected long-term rewards while being responsive to the evolving performance of the action set throughout the selection period."
+          ],
+          "code": null,
+          "objective": -449.99999999570724,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               " \nDesign a sophisticated action selection function that adeptly chooses an action index from the discrete set of options {0, 1, 2, 3, 4, 5, 6, 7}. The function should utilize the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots` to strike an optimal balance between exploration and exploitation. In the early phases of the time slots, the function should prioritize exploration to accumulate a rich dataset of action performance, thus ensuring informed future decisions. As more data is collected, gradually transition towards a focus on exploitation, favoring actions with superior average performance metrics.\n\nIncorporate a robust algorithmic framework that synergizes components of the Upper Confidence Bound (UCB) method and a dynamic Epsilon-Greedy approach, where the epsilon value evolves over time based on the total selection count and current time slot. The goal is to allow the function to intelligently fluctuate between exploration of underperformed actions and exploitation of those with higher average scores. It is imperative that the function also quantifies the uncertainty around action evaluations, integrating a measure of performance variation to refine selection accuracy.\n\nEnsure the output is a single action index (an integer between 0 and 7) that optimally forecasts long-term rewards while remaining adaptable to the shifting performance landscape across different time slots. \n"
+          ],
+          "code": null,
+          "objective": -449.9999999954191,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that judiciously selects an action index from the range {0, 1, 2, 3, 4, 5, 6, 7}, utilizing the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a balanced strategy that combines elements of exploration and exploitation. Initially, emphasize exploration to accumulate data on each action's efficacy during the early time slots. As time progresses and the selection counts increase, gradually shift towards exploiting the actions that demonstrate higher historical performance. Incorporate techniques such as Upper Confidence Bound (UCB) for uncertainty quantification and Epsilon-Greedy for dynamic exploration. Design the epsilon parameter to adaptively decrease over time, promoting a shift in focus towards reliable actions while maintaining the possibility of discovering new high-potential actions. The chosen action index must maximize long-term expected rewards and adapt responsively to the changing performance landscape of the options throughout the selection period. Ensure that the output is a valid action index (an integer in the inclusive range of 0 to 7)."
+          ],
+          "code": null,
+          "objective": -449.9999999950261,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design a robust action selection function that identifies the optimum action index from the set {0, 1, 2, 3, 4, 5, 6, 7} given the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should create a balanced strategy that intelligently navigates between exploration of less frequently selected actions and exploitation of those with higher performance scores. In the initial time slots, prioritize exploring a wider array of actions to gather comprehensive data on their effectiveness, then progressively transition towards exploiting actions that have shown improved average performance as data accumulates. Implement a hybrid strategy that incorporates aspects of the Upper Confidence Bound (UCB) method alongside an adaptive Epsilon-Greedy approach, where the Epsilon parameter is adjusted in response to the number of selections and remaining time slots. Factor in both the average scores and their variance to make informed decisions that enhance the likelihood of selecting the highest-reward action. Ensure that the output is a valid action index (an integer from 0 to 7) that optimizes expected long-term rewards while adapting to shifting performance trends over time."
+          ],
+          "code": null,
+          "objective": -449.9999999931949,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an adaptive action selection function that selects an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} using the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should dynamically balance exploration and exploitation throughout the time slots. Initially, prioritize exploration to accumulate data on each action's performance. As `total_selection_count` grows, transition towards exploitation by calculating the average scores of the actions and favoring those with higher values, while incorporating an exploration parameter to prevent overfitting on suboptimal choices. Implement strategies such as the Upper Confidence Bound (UCB) to evaluate potential rewards, and utilize a decaying epsilon parameter for the Epsilon-Greedy approach that gradually favors exploitation as the selection count increases. The ultimate goal of the function is to output a valid action index (an integer between 0 and 7) that maximizes cumulative rewards over time, while remaining adaptable to changes in action performance across different time slots."
+          ],
+          "code": null,
+          "objective": -449.99999999302423,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               " \nDevelop an action selection function that efficiently selects an action index from the available set {0, 1, 2, 3, 4, 5, 6, 7}. The function should utilize the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. Focus on balancing exploration and exploitation by employing a hybrid approach that combines the Upper Confidence Bound (UCB) method and a decaying Epsilon-Greedy strategy. Initially, emphasize exploration to gather data on less-selected actions, gradually shifting towards exploiting those actions that demonstrate higher historical scores as more selections are made. The epsilon parameter should dynamically adjust, decreasing over time to favor actions with proven performance while still allowing for occasional exploration of alternative actions. The function's output must be a valid action index (an integer between 0 and 7) that aims to maximize long-term reward, adapting to changes in action efficacy as time progresses. Ensure the logic is clear, modular, and capable of handling varying numbers of actions and time slots. \n"
+          ],
+          "code": null,
+          "objective": -449.9999999929041,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design a robust action selection function that strategically chooses an optimal action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should effectively balance exploration of less-selected actions and exploitation of high-scoring actions. In the initial time slots, prioritize exploration to accumulate knowledge about each action's performance. As data increases, shift the focus towards exploitation, favoring actions with the highest average scores. Incorporate a hybrid approach that combines principles from the Upper Confidence Bound (UCB) technique and the Epsilon-Greedy strategy, utilizing a dynamic epsilon value that decreases over time to reflect increased confidence in action performance. Additionally, assess both the average score and the selection frequency of each action, adapting decision-making to ensure a comprehensive evaluation of potential rewards. The output must be a valid action index (an integer between 0 and 7) that maximizes expected long-term gains while being responsive to trends in action effectiveness during the time slots."
+          ],
+          "code": null,
+          "objective": -449.99999999109656,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that strategically chooses an action index from {0, 1, 2, 3, 4, 5, 6, 7} by considering the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a dynamic exploration-exploitation strategy that allows for greater exploration in the initial time slots, gradually shifting towards exploitation of the most successful actions as evidence accumulates. Utilize a sophisticated hybrid approach that integrates the Upper Confidence Bound (UCB) to evaluate the potential of each action, while incorporating a decaying exploration parameter inspired by Epsilon-Greedy strategies. The exploration rate should diminish with increasing `total_selection_count`, but ensure that there remains a chance for exploration to accommodate shifts in action performance. The function should output a valid action index (an integer between 0 and 7) that maximizes cumulative rewards while remaining responsive to changes in action efficacy throughout different time slots."
+          ],
+          "code": null,
+          "objective": -449.9999999910466,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that robustly determines the optimal action index from the set {0, 1, 2, 3, 4, 5, 6, 7} given the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should prioritize exploration in the initial time slots to gather a broad range of data for all actions. As selections increase, it should progressively emphasize exploitation of actions with higher average scores, thereby reducing the risk of prematurely committing to potentially suboptimal actions. Implement a Hybrid strategy that utilizes a blend of Upper Confidence Bound (UCB) principles to account for the uncertainty in action value estimates and a decaying epsilon from the Epsilon-Greedy strategy to dynamically balance exploration and exploitation throughout the time slots. The goal is to maximize cumulative rewards while remaining adaptable to evolving action performance trends. The function must output the selected action index, ensuring it falls within the range of 0 to 7."
+          ],
+          "code": null,
+          "objective": -449.9999999909754,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that intelligently chooses an action index from the set {0, 1, 2, 3, 4, 5, 6, 7}, leveraging the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should prioritize exploration during the initial time slots to gather sufficient information about each action's performance, transitioning to a focus on exploitation of the best-performing actions as selection counts increase. Integrate a strategic blend of the Upper Confidence Bound (UCB) and Epsilon-Greedy approaches, striking a balance between uncertainty-based exploration and data-driven decision-making. Implement an adaptive exploration strategy, where the epsilon parameter decreases over time, allowing for ongoing testing of potentially high-reward actions while favoring those with historically superior scores. The output must be a valid action index (an integer between 0 and 7) that targets maximizing the long-term expected rewards, while remaining responsive to the evolving performance dynamics of the actions throughout the time slots."
+          ],
+          "code": null,
+          "objective": -449.9999999904854,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that dynamically selects an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should effectively balance exploration and exploitation by prioritizing exploration in the early time slots to gather sufficient performance data on all actions. As `total_selection_count` increases, the focus should gradually shift towards exploitation, favoring actions with higher average scores. Implement a blended approach that leverages the Upper Confidence Bound (UCB) method to gauge uncertainty and potential reward while incorporating a decaying epsilon value for an Epsilon-Greedy strategy, allowing for a controlled exploration phase that diminishes over time. The output must be a valid action index (an integer between 0 and 7), aiming to maximize cumulative rewards while remaining adaptable to changing action performance trends throughout the time slots."
+          ],
+          "code": null,
+          "objective": -449.99999998887705,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design a robust action selection function that intelligently chooses an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should employ a balanced strategy that emphasizes exploration in the early time slots to collect diverse data on action performance, gradually transitioning to exploitation of the highest-scoring actions as more data becomes available. Implement a hybrid mechanism that combines the Upper Confidence Bound (UCB) algorithm to assess the potential and risk of each action with a decaying exploration rate inspired by Epsilon-Greedy methods. Ensure that exploration decreases as `total_selection_count` increases while still allowing for occasional exploration to adapt to performance changes over time. The output must be a valid action index (an integer between 0 and 7), aiming to enhance cumulative rewards and adapt effectively to varying action effectiveness across time slots."
+          ],
+          "code": null,
+          "objective": -449.99999998846954,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that selects an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should strike an optimal balance between exploration of less-selected actions and exploitation of those with higher historical scores. Implement a strategy that starts with a higher exploration rate in the early time slots to gather sufficient data, and gradually transitions towards exploiting actions that have shown better performance as the time slots progress. \n\nConsider employing a combination of techniques such as Upper Confidence Bound (UCB) for quantifying uncertainty and Epsilon-Greedy for managing the exploration-exploitation trade-off. The epsilon value should decrease adaptively over time, allowing for a reliable selection of actions based on past performance while still leaving room for discovering potentially effective actions. The ultimate goal is to maximize the long-term expected reward, adapting to the evolving performance trends of available options while adhering to the requirement of returning a valid action index (an integer within the range of 0 to 7). Ensure that the design is efficient and responsive to the dynamics of the selection environment."
+          ],
+          "code": null,
+          "objective": -449.99999998820863,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that intelligently selects an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} using the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should prioritize exploration during the initial time slots to gather comprehensive performance data, progressively shifting to a focus on exploitation of the most effective actions as more data accumulates. Implement a balanced mechanism that merges principles from the Upper Confidence Bound (UCB) and Epsilon-Greedy strategies, ensuring both uncertainty sampling and data-driven decision-making are considered. The exploration strategy should include a dynamically decreasing exploration parameter that adapts as `total_selection_count` increases, allowing for ongoing evaluation of high-potential actions while still favoring those with demonstrated success. The output must be a valid action index (an integer from 0 to 7) that aims to optimize long-term returns, taking into account historical performance while remaining responsive to ongoing changes in action effectiveness."
+          ],
+          "code": null,
+          "objective": -449.99999998498726,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an intelligent action selection function that chooses an action index from the set of indices {0, 1, 2, 3, 4, 5, 6, 7} based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should leverage a mixed strategy that prioritizes exploration in the initial time slots to gather insightful data on action performances, gradually shifting towards exploitation of the most promising actions as more historical data accumulates. Integrate a version of the Upper Confidence Bound (UCB) algorithm to evaluate the potential of each action, while incorporating an Epsilon-Greedy approach with a decaying exploration probability based on the `total_selection_count`. Exploration should diminish over time, but the function must retain a mechanism for occasional exploration to adjust for shifts in action efficacy. The output must be an action index (an integer between 0 and 7) aimed at maximizing cumulative rewards and responsively adapting to the dynamics of action performance across different time slots."
+          ],
+          "code": null,
+          "objective": -449.99999998493183,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that intelligently chooses an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a balanced strategy that emphasizes exploration in the initial time slots to gather data on all actions while gradually shifting towards exploitation as more selections are made. Use a modified Upper Confidence Bound (UCB) formula that weighs both the average scores and the selection counts to assess the potential value of each action. Additionally, incorporate a time-decaying epsilon parameter for an Epsilon-Greedy approach, allowing for controlled exploration that decreases over time. The output must be a valid action index (an integer between 0 and 7), with the goal of maximizing cumulative rewards and adapting to variations in action performance across different time slots. Ensure that the logic accommodates both short-term and long-term decision-making strategies."
+          ],
+          "code": null,
+          "objective": -449.9999999845147,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that effectively chooses an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should initially emphasize exploration to gather diverse performance data during early time slots and gradually shift towards exploitation of the best-performing actions in later slots. Implement a hybrid strategy that incorporates concepts from both the Upper Confidence Bound (UCB) and Epsilon-Greedy methods, allowing for a balance between uncertainty sampling and informed decision-making. The exploration factor should be adaptive, with a decreasing epsilon parameter as `total_selection_count` rises, ensuring continuous exploration of promising actions even as exploitation is favored. The output must be a valid action index (an integer between 0 and 7) that aims to maximize long-term expected rewards while dynamically adjusting to changes in action performance over time."
+          ],
+          "code": null,
+          "objective": -449.9999999673651,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an adaptive action selection function that efficiently selects an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} using the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a balanced approach between exploration and exploitation. During the initial time slots, focus on exploration to gather a sufficient amount of data on the performance of each action. As the `total_selection_count` increases, shift the strategy towards exploitation by favoring actions with higher average scores, while maintaining a minimum level of exploration to avoid local optima. Leverage techniques such as the Upper Confidence Bound (UCB) for assessing potential rewards and incorporate a dynamic epsilon value for the Epsilon-Greedy strategy that decreases over time, ensuring a gradual transition from exploration to exploitation. The function should output a valid action index (an integer between 0 and 7), aiming to maximize cumulative rewards over time while remaining responsive to changes in action performance across time slots."
+          ],
+          "code": null,
+          "objective": -449.9999999670441,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that identifies the most suitable action index from the set {0, 1, 2, 3, 4, 5, 6, 7} using the inputs `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. This function should adopt a dynamic strategy that starts with a higher emphasis on exploration to accumulate diverse performance insights, especially during the initial time slots. As time progresses and data accumulates, the approach should transition towards exploitation, prioritizing actions that display superior historical performance. Integrate both the Upper Confidence Bound (UCB) and Epsilon-Greedy algorithms in a synergistic manner to facilitate a balanced approach that not only leverages existing knowledge but also maintains a level of exploration to discover potentially better actions. The exploration factor should be adaptable, with the epsilon parameter diminishing in response to increasing `total_selection_count`, thereby ensuring ongoing exploration of high-potential actions even as exploitation becomes more prevalent. The final output must be a valid action index (an integer between 0 and 7) designed to optimize long-term rewards while thoughtfully responding to evolving action performance metrics throughout the time slots."
+          ],
+          "code": null,
+          "objective": -449.9999999631621,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that selects an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should strategically balance exploration and exploitation: prioritize exploration in the early time slots to accumulate a diverse set of performance data, and transition towards exploitation in later slots by favoring actions with higher average scores. Utilize an adaptive exploration strategy, such as the Upper Confidence Bound (UCB) method, which allows for informed decision-making based on uncertainty. Implement a dynamic epsilon parameter for the Epsilon-Greedy approach that decreases as `total_selection_count` increases, ensuring that exploration is maintained even when exploitation is preferred. The output should be a valid action index (an integer from 0 to 7), aiming to maximize the expected cumulative reward while remaining adaptable to shifts in action effectiveness over time."
+          ],
+          "code": null,
+          "objective": -449.9999999599482,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an intelligent action selection function that effectively chooses an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} by utilizing the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a balanced exploration-exploitation strategy, integrating principles from both the Upper Confidence Bound (UCB) and Epsilon-Greedy methods. Initially, emphasize exploration in the early time slots to gather sufficient data on each action's performance. As `total_selection_count` increases, shift the focus toward exploitation, selecting actions with higher average historical scores. Furthermore, allow for a controlled level of exploration to mitigate the risk of converging to suboptimal choices. The output must be a valid action index (an integer from 0 to 7) that maximizes expected cumulative rewards across the total time slots, while continuously adapting to the evolving performance data for each action. Ensure the design emphasizes real-time decision-making and robustness in a dynamic setting."
+          ],
+          "code": null,
+          "objective": -449.99999995071653,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design a responsive action selection function that selects the most suitable action index from the set {0, 1, 2, 3, 4, 5, 6, 7}. The function will use the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots` to balance exploration and exploitation effectively. In the early time slots, prioritize exploration to gather sufficient performance data across all actions. As the selection count increases, gradually shift towards exploitation by favoring actions with higher average historical scores while ensuring occasional exploration to adapt to potential changes in action effectiveness. Implement a hybrid approach that combines principles from both the Upper Confidence Bound (UCB) and Epsilon-Greedy strategies to dynamically optimize action selection based on past performance while considering the current context. The output should be a valid action index (an integer between 0 and 7), aimed at maximizing cumulative rewards over time while remaining flexible to variations in action performance."
+          ],
+          "code": null,
+          "objective": -449.9999999491431,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that judiciously chooses an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should initially prioritize exploration to gather a wide range of performance data for actions, especially in the earlier time slots. As the total number of selections increases, the strategy should smooth the transition towards exploitation by selecting actions with the highest average scores, while also managing the risk of premature convergence on possibly suboptimal choices. Incorporate a hybrid method that leverages both the Upper Confidence Bound (UCB) technique to capture uncertainty in the estimated outcomes of actions and a Time-varying epsilon for the Epsilon-Greedy strategy to gradually reduce exploration over time. The output of the function should be the index of the selected action, ensuring it remains within the valid range of 0 to 7. Focus on optimizing cumulative rewards throughout the available time slots, allowing for adaptability in the face of changing action performances and ensuring a balanced approach between exploration and exploitation."
+          ],
+          "code": null,
+          "objective": -449.99999994812805,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an advanced action selection function that efficiently selects an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should adeptly balance exploration and exploitation strategies. In the initial time slots, emphasize exploration to collect a robust set of performance data for each action. As the number of selections grows, transition towards a more exploitation-focused approach, opting for actions with higher average scores while still integrating a strategic exploration component. The function should adaptively leverage both the Upper Confidence Bound (UCB) and Epsilon-Greedy techniques in synergy, allowing it to optimize action selection based on historical success rates and ongoing performance dynamics. The output must be a valid action index (an integer from 0 to 7), designed to maximize cumulative rewards and maintain adaptability to shifts in action effectiveness over time."
+          ],
+          "code": null,
+          "objective": -449.999999922564,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design a versatile action selection function that chooses an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should expertly balance exploration and exploitation throughout the time slots. During the early time slots, prioritize exploration to gather comprehensive data on each action's performance. As the `total_selection_count` increases, gradually transition towards exploitation by selecting actions that exhibit better average scores, while maintaining a controlled exploration strategy to ensure diversity and prevent premature convergence. The function should output a valid action index (an integer between 0 and 7), aiming to maximize cumulative rewards while being adaptable to the changing dynamics of action performance over time. Ensure the selection strategy incorporates both the Upper Confidence Bound (UCB) and Epsilon-Greedy methodologies in a complementary manner for optimal effectiveness."
+          ],
+          "code": null,
+          "objective": -449.9999999220627,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an innovative action selection function that efficiently determines the optimal action index from the set of options {0, 1, 2, 3, 4, 5, 6, 7}. Utilize the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function must balance exploration and exploitation by incorporating a dynamic strategy. In the early time slots, prioritize exploration to gather a diverse dataset by favoring less frequently chosen actions. As the selection count increases, shift focus towards exploitation, selecting actions with higher average scores. Consider implementing an approach like Upper Confidence Bound (UCB) or Softmax to facilitate this balance. Ensure that the function returns a valid action index (0 to 7) and is straightforward in its logic, allowing for easy modifications and future enhancements. The overarching goal is to maximize long-term rewards while adapting to the changing performance of each action throughout the time slots."
+          ],
+          "code": null,
+          "objective": -449.9999999086196,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Craft a robust action selection function that intelligently identifies the most suitable action index from the range {0, 1, 2, 3, 4, 5, 6, 7} by leveraging the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should prioritize a balanced exploration-exploitation strategy, drawing insights from both Upper Confidence Bound (UCB) and Epsilon-Greedy approaches. In the initial time slots, focus on exploration to accumulate valuable data on each action's performance. As the `total_selection_count` grows, gradually shift towards exploitation by selecting actions with higher average scores. Incorporate a dynamic exploration mechanism to ensure that less-selected actions have a controlled chance of being chosen, reducing the risk of settling on suboptimal options. The output must be an action index (an integer between 0 and 7) that optimally balances immediate rewards and long-term gains, adapting in real-time to the changing performance metrics of each action. Emphasize the need for agility and adaptability in decision-making within a fluctuating environment."
+          ],
+          "code": null,
+          "objective": -449.9999999082224,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design a comprehensive action selection function that chooses an action index from the available set {0, 1, 2, 3, 4, 5, 6, 7} based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a balanced strategy that incorporates both exploration and exploitation principles. During the initial time slots, prioritize exploration to efficiently gather insights about the performance of each action. As `total_selection_count` increases, gradually transition towards exploitation by selecting actions that demonstrate higher average scores, while still preserving an exploration component. Consider using a blend of the Upper Confidence Bound (UCB) and Epsilon-Greedy methods to adaptively determine the optimal action index. The output should be a valid action index (an integer between 0 and 7) aimed at maximizing cumulative rewards over all time slots, and it should dynamically adjust to reflect the changing data trends from `score_set`."
+          ],
+          "code": null,
+          "objective": -449.9999999027361,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Develop an advanced action selection function that chooses an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a balanced approach that harmonizes exploration and exploitation using a hybrid of the Upper Confidence Bound (UCB) and Epsilon-Greedy strategies. In the initial time slots, prioritize exploration to accurately assess the performance of each action, gradually transitioning to an exploitation-focused strategy as `total_selection_count` rises. This transition should allow for the selection of actions with higher average scores while ensuring a controlled degree of exploration to avoid local optima. The final output must be a valid action index (an integer from 0 to 7) that maximizes cumulative rewards over the total time slots while dynamically adapting to the changing performance data for each action. Aim for a design that effectively balances these aspects to optimize decision-making in a dynamic environment."
+          ],
+          "code": null,
+          "objective": -449.9999999013375,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design a robust action selection function that dynamically selects an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should effectively balance exploration and exploitation using a composite strategy that combines elements of both the Upper Confidence Bound (UCB) technique and an adaptive Epsilon-Greedy method. In the earlier time slots, emphasize exploration to gather valuable information about each action\u2019s performance. As the `total_selection_count` increases, shift the focus towards exploitation by favoring actions with higher average scores while still maintaining a minimal level of exploration to prevent stagnation. The function must output a valid action index (an integer between 0 and 7), optimizing for overall cumulative rewards across all time slots while being responsive to the evolving performance metrics of each action."
+          ],
+          "code": null,
+          "objective": -449.99999987650466,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design a robust action selection function that dynamically chooses an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should effectively balance exploration and exploitation to optimize cumulative rewards over time. In the early time slots, prioritize exploration to build a comprehensive understanding of each action\u2019s performance by selecting actions more uniformly. As the total number of selections increases, gradually shift the focus towards exploitation by favoring actions that have historically demonstrated higher average scores. Implement advanced strategies such as the Upper Confidence Bound (UCB) to gauge potential rewards, alongside an adaptive epsilon value for the Epsilon-Greedy strategy that gradually decreases to facilitate the transition from exploration to exploitation. Ensure the function outputs a valid action index (an integer between 0 and 7) to maximize long-term gains while remaining adaptable to fluctuations in action performance across different time slots."
+          ],
+          "code": null,
+          "objective": -449.99999986442083,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an adaptive action selection function that chooses the most suitable action index from a set of options {0, 1, 2, 3, 4, 5, 6, 7} based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should incorporate a balanced strategy that blends exploration (favoring less frequently selected actions to gather diverse data) and exploitation (favoring actions with higher average scores). Implement techniques such as Upper Confidence Bound (UCB) or Softmax, with an emphasis on exploration during the initial time slots to ensure a robust dataset. As the total selection count increases, the focus should gradually shift towards exploiting high-performing actions. The output must be a valid action index between 0 and 7, with the ultimate goal of maximizing long-term rewards and adapting to the evolving performance of actions throughout the time slots. Prioritize clarity and simplicity in the logic for easy adjustments and enhancements."
+          ],
+          "code": null,
+          "objective": -449.99999985638345,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an advanced action selection function that operates on a set of actions {0, 1, 2, 3, 4, 5, 6, 7} using the inputs provided: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function must effectively balance exploration and exploitation to optimize long-term rewards. Initially, prioritize exploration during the early time slots to collect diverse performance data for each action. As the number of selections increases, progressively adjust the strategy toward exploitation by increasingly favoring actions with higher average scores. Implement a mechanism like Upper Confidence Bound (UCB) to quantify potential rewards and maintain some level of exploration through an adaptive epsilon that diminishes over time. This will facilitate a smooth transition from exploring less frequently chosen actions to exploiting those with proven success, ensuring a flexible response to changes in action performance. The output must be a valid action index, a number between 0 and 7, that aims to maximize overall reward accumulation while remaining adaptable throughout the time slots."
+          ],
+          "code": null,
+          "objective": -449.99999985107496,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an adaptive action selection function that identifies the optimal action index from the set {0, 1, 2, 3, 4, 5, 6, 7} using the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should effectively balance exploration (selecting less frequently chosen actions) and exploitation (prioritizing actions with higher average historical scores) through a strategy such as the Upper Confidence Bound (UCB) or Softmax. Implement a mechanism that emphasizes exploration during the initial time slots to gather sufficient data on each action, and gradually shifts towards exploiting the actions with better performance as more selections are made. Ensure that the output is a valid action index ranging from 0 to 7, aiming to maximize long-term rewards and adapt to changes in action performance over time slots."
+          ],
+          "code": null,
+          "objective": -449.9999998432112,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Develop an adaptive action selection function that chooses an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should effectively balance exploration and exploitation by integrating a modified Upper Confidence Bound (UCB) and an Epsilon-Greedy approach. During the initial time slots, prioritize exploration to accumulate information on the performance of each action. As `total_selection_count` increases, progressively shift towards exploitation by leaning towards actions with better average scores, while still incorporating a small probability of exploration to avoid convergence to suboptimal actions. The output must be a valid action index (an integer from 0 to 7), aimed at maximizing cumulative rewards across all time slots, while being adaptable to the changing performance of each action based on historical scores."
+          ],
+          "code": null,
+          "objective": -449.999999827975,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that efficiently determines the optimal action from the set of indices {0, 1, 2, 3, 4, 5, 6, 7} based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should effectively balance exploration of less frequently chosen actions with the exploitation of those demonstrating higher average scores. To achieve this, integrate a dynamic strategy that combines the Upper Confidence Bound (UCB) for evaluating uncertainty in action performance with an adaptive Epsilon-Greedy mechanism that prioritizes exploration during earlier time slots. As the `current_time_slot` advances, the strategy should shift to favor actions with established success rates, thereby optimizing cumulative rewards throughout the available time slots. The output must be a single action index (an integer ranging from 0 to 7) that aims to maximize long-term rewards while appropriately addressing uncertainty from historical selection data."
+          ],
+          "code": null,
+          "objective": -449.9999998259724,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an adaptive action selection function that efficiently selects an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} using the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should dynamically balance exploration and exploitation based on the stage of decision-making. In the initial time slots, focus on exploration to build a robust understanding of the actions' performance by randomly selecting actions with some degree of randomness (e.g., epsilon). As `total_selection_count` grows, shift towards an exploitation strategy, favoring actions with higher average scores while incorporating a mechanism to maintain exploration (e.g., by adjusting epsilon over time). Ensure the function integrates both Upper Confidence Bound (UCB) and Epsilon-Greedy strategies in a synergistic way to maximize cumulative rewards. The output must be a valid action index (an integer between 0 and 7) that reflects the optimal choice given the current context and history of selections. Aim for a balance that prevents premature convergence while adapting to evolving action performance patterns throughout the process."
+          ],
+          "code": null,
+          "objective": -449.99999982479204,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Develop an advanced action selection function that strategically chooses an action index from the options {0, 1, 2, 3, 4, 5, 6, 7} based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function must implement a sophisticated exploration-exploitation strategy, incorporating techniques like Upper Confidence Bound (UCB) or the Epsilon-Greedy approach to balance the need for exploration of less frequently selected actions and the exploitation of those with higher average performance. During the earlier time slots, prioritize exploration to gather sufficient data, while progressively focusing on actions with better historical performance as the total selection count increases. The function should output a valid action index (an integer between 0 and 7), optimizing for cumulative rewards across all time slots while adapting to the dynamic performance of each action."
+          ],
+          "code": null,
+          "objective": -449.99999981724847,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Develop an action selection function that identifies the most suitable action from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should strike a balance between exploration of less selected actions and exploitation of those with higher average scores. Implement a method that combines elements of the Upper Confidence Bound (UCB) approach to evaluate uncertain actions and an Epsilon-Greedy strategy to enhance exploration in the earlier time slots. As `current_time_slot` progresses, gradually shift the focus toward actions with proven performance to maximize long-term rewards. Ensure that the function incorporates uncertainty measurements from historical data to guide selection effectively. The output must be a single action index (an integer between 0 and 7) that optimizes cumulative rewards over the available time slots."
+          ],
+          "code": null,
+          "objective": -449.9999997957782,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design a robust action selection function that efficiently selects an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} using the following inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a balanced exploration-exploitation strategy that initially favors exploration in the early time slots to gather comprehensive performance data on all actions. As selections accumulate, gradually shift towards exploiting actions that demonstrate higher average scores. Consider employing advanced techniques like Thompson Sampling, Upper Confidence Bound (UCB), or a Softmax approach to strike the right balance. The output must be a valid integer between 0 and 7, aimed at maximizing long-term performance and adapting dynamically to the evolving success rates of the actions as time progresses."
+          ],
+          "code": null,
+          "objective": -449.99999979385495,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design a robust action selection function that identifies the optimal action from the set of indices {0, 1, 2, 3, 4, 5, 6, 7} using the inputs `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a balanced approach that encourages exploration of underutilized actions while simultaneously exploiting high-performing actions based on their historical score data. Utilize a hybrid method that combines elements of the Upper Confidence Bound (UCB) algorithm to assess uncertainty and a dynamic Epsilon-Greedy strategy that adjusts exploration rates as `current_time_slot` progresses. Early in the selection process, emphasize exploration to gather more data; subsequently, as actions are evaluated over time, shift toward those with superior average outcomes. The function must return a single action index (an integer between 0 and 7) that maximizes expected long-term rewards while effectively managing the trade-off between exploration and exploitation based on historical performance metrics."
+          ],
+          "code": null,
+          "objective": -449.9999997915893,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that intelligently chooses an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the inputs `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a dynamic exploration-exploitation strategy, starting with a higher emphasis on exploration in the initial time slots to gather sufficient data on each action's performance. As the time progresses and more actions are selected, the approach should increasingly favor exploitation of actions that reveal higher average scores. Consider integrating techniques such as Epsilon-Greedy, Bayesian Bandits, or Upper Confidence Bounds to adaptively balance exploration and exploitation over time. Ensure that the output is a valid integer between 0 and 7, representing the action index that aims to maximize cumulative rewards while adapting to the historical performance trends of the actions."
+          ],
+          "code": null,
+          "objective": -449.9999997689868,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design a dynamic action selection function that chooses an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function must effectively balance exploration and exploitation by implementing a hybrid approach of Upper Confidence Bound (UCB) and Epsilon-Greedy strategies. Initially, prioritize exploration in early time slots to gather data on action performance, and as `total_selection_count` rises, gradually shift towards exploitation by favoring actions with higher historical scores. However, ensure a non-zero exploration probability is maintained to avoid local optima. Strive to select the action index that will maximize cumulative rewards over the time horizon while adapting to changing performance trends for each action. Output a valid action index (an integer between 0 and 7) for each decision point."
+          ],
+          "code": null,
+          "objective": -449.99999972955567,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design a dynamic action selection function that selects an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should incorporate an effective exploration-exploitation strategy, such as UCB (Upper Confidence Bound) or Softmax, to balance the choice of actions based on both their historical performance and the uncertainty of their scores. Emphasize the importance of exploring less-selected actions in the early time slots to gather data while progressively favoring actions with higher average scores as the total number of selections increases. The function must output a valid action index (an integer between 0 and 7) that aims to maximize cumulative rewards over time, taking into account the evolving dynamics of the action performance across the time slots."
+          ],
+          "code": null,
+          "objective": -449.99999968159153,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that effectively chooses an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} using the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should employ a hybrid exploration-exploitation strategy, integrating concepts like UCB (Upper Confidence Bound) and Epsilon-Greedy to intelligently balance the need to explore less frequently chosen actions and to exploit those that have demonstrated higher success rates. During the initial time slots, the algorithm should promote exploration to gather more diverse data, gradually favoring actions with superior average scores as `current_time_slot` progresses. Additionally, consider incorporating uncertainty measures to gauge the reliability of scores associated with each action to enhance decision-making. The output should be a valid action index (an integer between 0 and 7) optimized for maximizing cumulative rewards over the course of all time slots."
+          ],
+          "code": null,
+          "objective": -449.99999967574416,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that intelligently chooses the most suitable action from the set of indices {0, 1, 2, 3, 4, 5, 6, 7} using the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a balanced approach that promotes both exploration of underutilized actions and exploitation of those with higher historical performance. This can be achieved through a hybrid method that combines a Bayesian bandit strategy to quantify the uncertainty of each action's potential with a decaying exploration parameter that encourages more frequent exploration in the early time slots. As the `current_time_slot` increases, the strategy should progressively emphasize actions with proven success rates, optimizing the overall reward potential while managing risk based on historical selection patterns. The output should yield a single action index, an integer between 0 and 7, that aims to maximize long-term expected rewards and adaptively responds to the changing landscape of historical performance data."
+          ],
+          "code": null,
+          "objective": -449.9999996674734,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that efficiently determines the optimal action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should utilize a balanced approach between exploration and exploitation, leveraging techniques such as Upper Confidence Bound (UCB) for assessing the potential of less frequently chosen actions, along with an Epsilon-Greedy strategy to ensure adequate exploration at the start. In the early time slots, encourage exploration to build a robust dataset; as `current_time_slot` increases, shift the focus towards actions with higher average scores. Integrate measures of uncertainty to effectively evaluate the reliability of the action scores, enabling more informed decision-making. The output should be a single action index (an integer ranging from 0 to 7) that aims to maximize long-term cumulative rewards throughout the designated time slots."
+          ],
+          "code": null,
+          "objective": -449.9999996608303,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design a robust action selection function that efficiently selects an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the following inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a balanced exploration-exploitation mechanism by utilizing strategies such as Thompson Sampling or the Epsilon-Greedy algorithm to quantify uncertainty and optimize decision-making. It should encourage exploration of underperforming actions during early time slots when the dataset is limited while progressively shifting towards the actions with higher average scores as more data becomes available, particularly in later time slots. Ensure that the output is a valid action index (an integer between 0 and 7) aimed at maximizing cumulative rewards across all time slots, keeping in mind the performance variations associated with each action."
+          ],
+          "code": null,
+          "objective": -449.99999964726305,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that dynamically selects the most appropriate action from the indices {0, 1, 2, 3, 4, 5, 6, 7} based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should utilize a balanced strategy that encourages both exploration of less frequently selected actions and exploitation of actions with higher average scores. Implement a reinforcement learning approach, such as the Upper Confidence Bound (UCB) or Thompson Sampling, to quantify uncertainty and inform decision-making. Incorporate a mechanism to decrease exploration gradually as the `current_time_slot` increases, shifting focus toward actions that demonstrate consistent historical success. The output must be a single action index\u2014an integer between 0 and 7\u2014aimed at maximizing long-term rewards while adapting to the evolving performance data across different time slots."
+          ],
+          "code": null,
+          "objective": -449.99999962859846,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that selects an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a balanced exploration-exploitation strategy that dynamically adjusts based on the total selection count and the effectiveness of each action. Incorporate components from both UCB (Upper Confidence Bound) and Epsilon-Greedy approaches, ensuring that in the early time slots, a higher emphasis is placed on exploring less-selected actions to build a more comprehensive understanding of all available options. As `current_time_slot` increases, the function should gradually shift towards favoring actions with the highest average scores, while still allowing for occasional exploration of lower-performing actions to avoid local optima. Additionally, utilize uncertainty estimates to reinforce decision-making, ensuring actions that may yield higher long-term rewards are preferred when they exhibit reliable performance. The output should be a valid action index (an integer between 0 and 7) that maximizes expected cumulative rewards throughout the decision-making process."
+          ],
+          "code": null,
+          "objective": -449.9999995949092,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "  \nDesign an action selection function that efficiently determines an action index (0 to 7) based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should employ a balanced strategy that integrates exploration and exploitation, leveraging techniques such as epsilon-greedy, Upper Confidence Bound (UCB), or Thompson Sampling. Aim to explore less frequently chosen actions while exploiting actions with historically higher average scores derived from `score_set`. The method should adapt its focus dynamically, emphasizing exploration during early time slots with sparse data and gradually shifting towards exploitation as the selection history accumulates. The output must be a single integer indicating the selected action index (0-7) that maximizes cumulative rewards throughout the time horizon. Ensure the approach is statistically sound and responsive to evolving data conditions to enhance overall decision-making performance.  \n"
+          ],
+          "code": null,
+          "objective": -449.9999994515889,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an advanced action selection function that identifies the most suitable action index from the available options {0, 1, 2, 3, 4, 5, 6, 7} using the following parameters: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. Implement a dynamic exploration-exploitation strategy that effectively balances the need to investigate lesser-selected actions while capitalizing on those with proven higher average scores. Consider incorporating techniques like Bayesian Optimization or a modified UCB approach to better assess uncertainty in selection. The function should dynamically adjust the exploration level based on the `current_time_slot`, promoting exploration in earlier time slots when data is sparse, and transitioning to a preference for exploitation as more information accumulates. The final output must be a single integer representing the chosen action index, ensuring it is always between 0 and 7, with the goal of optimizing cumulative rewards over successive time slots."
+          ],
+          "code": null,
+          "objective": -449.99999939028544,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that selects an action index (0 to 7) based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a robust exploration-exploitation strategy, such as Thompson Sampling or Softmax, to facilitate a balance between trying less-frequent actions and leveraging the best-performing actions according to their historical scores. The selection process must adapt dynamically to the `current_time_slot`, encouraging more exploration in early slots when information is scarce and gradually shifting towards exploitation as more data accumulates. The output should be a single integer (between 0 and 7), representing the selected action index that aims to maximize the cumulative rewards over the course of all time slots. Ensure that your approach utilizes the principles of probability and statistics to enhance decision-making and overall performance."
+          ],
+          "code": null,
+          "objective": -449.9999993737542,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that selects an action index from 0 to 7 based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a balanced strategy, combining exploration of less-frequently chosen actions and exploitation of actions with higher historical scores. Consider using methods such as epsilon-greedy, Upper Confidence Bound (UCB), or Thompson Sampling, especially during initial time slots to encourage exploration when data is scarce. The function must compute the average scores from `score_set` and weigh the selection probabilities based on both performance metrics and selection frequency. Ensure that the output is a valid action index (an integer between 0 and 7) that promotes long-term reward optimization based on the historical performance data."
+          ],
+          "code": null,
+          "objective": -449.9999992907521,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an advanced action selection function tasked with choosing the most suitable action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. This function should implement an effective exploration-exploitation balance, potentially utilizing strategies such as Thompson Sampling, epsilon-greedy, or Upper Confidence Bound (UCB). The goal is to favor actions with higher average historical scores while maintaining a systematic approach to explore less frequently selected options. Consider the historical performance reflected in `score_set`, accounting for the number of times each action has been selected, to inform your decision-making process. The exploration rate should be adaptive, allowing for more exploration during the initial time slots when data is scarce and gradually emphasizing exploitation of higher-scoring actions as the total selection count rises. The output must be a single integer in the range of 0-7, indicating the chosen action that optimizes long-term cumulative rewards."
+          ],
+          "code": null,
+          "objective": -449.99999928267204,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that determines the most suitable action from the indices {0, 1, 2, 3, 4, 5, 6, 7}, using the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function must strike a balance between exploration (trying less frequently selected actions) and exploitation (favoring actions with higher average scores). Implement a hybrid strategy that employs the Upper Confidence Bound (UCB) to quantify the uncertainty of action performance, while also incorporating an adaptive Epsilon-Greedy mechanism that promotes exploration more heavily in the initial time slots. As the `current_time_slot` increases, the function should gradually shift focus to actions with proven performance. The output should be a single action index (an integer between 0 and 7) that aims to maximize expected long-term rewards, ensuring a strategic approach that carefully considers both historical selection data and the evolving context of the selection process."
+          ],
+          "code": null,
+          "objective": -449.99999913356544,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Develop a refined action selection function that identifies the optimal action index (ranging from 0 to 7) from a specified set based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function must implement a dynamic strategy that judiciously balances exploration (to sample underused actions) with exploitation (to leverage the best-performing actions). To achieve this, consider methods such as Upper Confidence Bound (UCB) or Softmax, ensuring that during the early time slots, exploration is prioritized to enrich the performance dataset. As the total selection count grows, the function should progressively emphasize exploiting high-value actions. The output should consistently return a valid action index within the designated range, aiming to optimize long-term rewards while remaining adaptable to shifts in action performance. Ensure that the selection logic is straightforward and maintainable for future enhancements."
+          ],
+          "code": null,
+          "objective": -449.99999894376555,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that effectively chooses an action index from 0 to 7 based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a sophisticated strategy that balances exploration and exploitation, such as epsilon-greedy or Upper Confidence Bound (UCB). It must prioritize less-selected actions to encourage exploration while leveraging higher average scores from historical data in `score_set` for exploitation. Additionally, the function should adapt its strategy dynamically, emphasizing exploration during the initial time slots when data is limited, and transitioning towards exploitation as more information becomes available. The output must be a single integer representing the chosen action index (0-7), aiming to optimize cumulative rewards over the entire time span. Ensure that the approach taken is data-driven and rooted in statistical principles to maximize overall performance."
+          ],
+          "code": null,
+          "objective": -449.99999884124816,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that efficiently chooses an action index from 0 to 7 using the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should employ a balanced approach that incorporates both exploration of lesser-known actions and exploitation of those with strong historical performance. Consider algorithms such as epsilon-greedy, Upper Confidence Bound (UCB), or Bayesian approaches to ensure a dynamic balance between exploring new actions and utilizing data from previous selections. The function should compute the average scores from `score_set`, taking into account both the accumulated historical performance and the frequency of each action's selection. Furthermore, the function must adapt its strategy over time, increasingly favoring actions with higher average scores as `current_time_slot` progresses. Ensure the output is a valid integer between 0 and 7, representing the selected action index while maintaining a mechanism to encourage diversity in action selection early on."
+          ],
+          "code": null,
+          "objective": -449.99999880768775,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an adaptive action selection function that efficiently chooses an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a robust exploration-exploitation strategy, such as Thompson Sampling or epsilon-greedy, to optimize the trade-off between trying lesser-selected actions and capitalizing on actions with proven success. Focus on enabling thorough exploration during the initial time slots to gather essential performance data, while gradually shifting towards a preference for higher average-scoring actions as the total selections increase. The output must be a valid action index (an integer between 0 and 7) that seeks to maximize expected cumulative rewards over time, reflecting the changing dynamics of action outcomes in the context of ongoing selections."
+          ],
+          "code": null,
+          "objective": -449.9999983833561,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that systematically chooses an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should employ a dynamic exploration-exploitation strategy that combines the Upper Confidence Bound (UCB) approach with Epsilon-Greedy mechanisms. Initially, encourage exploration of all actions, particularly those with limited historical data, to ensure a broad understanding of each action's potential. As `current_time_slot` advances, shift the focus towards actions with higher average scores while incorporating uncertainty estimates to refine decision-making. The output must be a valid action index (an integer between 0 and 7) that aims to maximize cumulative rewards throughout the entire duration of the time slots, adapting the balance between exploration and exploitation based on the evolving context of selections and scores."
+          ],
+          "code": null,
+          "objective": -449.99999834991297,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an advanced action selection function that judiciously chooses an action index from {0, 1, 2, 3, 4, 5, 6, 7} using the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a hybrid strategy that combines elements of the Upper Confidence Bound (UCB) and a dynamic Epsilon-Greedy mechanism. In the initial time slots, prioritize exploration to effectively gather data on each action's performance. As `total_selection_count` grows, progressively enhance the exploitation of actions with higher average scores while maintaining a baseline level of exploration to ensure continual adaptation. The selected action index should not only maximize immediate rewards but also optimize the long-term performance across all time slots, responding effectively to the changing performance landscape of the actions. The output must be a valid action index (an integer between 0 and 7) that reflects this strategic balance."
+          ],
+          "code": null,
+          "objective": -449.99999829437996,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an adaptive action selection function that efficiently chooses an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} using the inputs: `score_set` (a dictionary mapping action indices to lists of historical scores), `total_selection_count` (the cumulative count of selections), `current_time_slot` (the ongoing time period), and `total_time_slots` (the overall duration of selections). The function should implement a well-balanced exploration-exploitation framework, such as Thompson Sampling or Epsilon-Greedy, to ensure the discovery of underexplored actions, especially in the initial time slots. As time progresses, the function should increasingly prioritize actions that have demonstrated higher average scores. The output must be a valid action index (an integer between 0 and 7) that optimally enhances long-term reward accumulation, reflecting the dynamic nature of action efficacy throughout the entire selection process. Additionally, ensure that the function handles edge cases, such as actions with no historical data, in a robust manner."
+          ],
+          "code": null,
+          "objective": -449.9999981261715,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Develop a sophisticated action selection function that determines the optimal action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the following inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should utilize a hybrid exploration-exploitation strategy, such as an adaptive epsilon-greedy method or Upper Confidence Bound (UCB), ensuring that actions with higher average scores are favored while selectively exploring less frequently chosen options. Pay careful attention to the distribution of historical scores in `score_set` and how many times each action has been selected to guide decisions effectively. Adjust the exploration rate dynamically, encouraging more exploration during early time slots when data is limited and gradually shifting towards exploitation of higher-scoring actions as more information becomes available. The output must be a single integer within the range of 0-7, representing the selected action that aims to maximize cumulative rewards over time."
+          ],
+          "code": null,
+          "objective": -449.99999767597643,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an effective action selection function that chooses an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} using the following inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should balance exploration and exploitation by applying a strategy such as Upper Confidence Bound (UCB) or Softmax sampling to guide decision-making. Emphasize the importance of exploring less frequently chosen actions in the early time slots to gather sufficient data, while gradually favoring actions with higher average scores as the total selection count increases. The output must be a valid action index (an integer between 0 and 7) that aims to maximize overall rewards through adaptive learning, taking into account the historical performance variability of each action."
+          ],
+          "code": null,
+          "objective": -449.99999718619597,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design a sophisticated action selection function that efficiently determines the optimal action index from the available set {0, 1, 2, 3, 4, 5, 6, 7} based on the following inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a smart exploration-exploitation strategy that balances the need to sample less frequently chosen actions while leveraging those with historically higher performance. Consider employing approaches such as Thompson Sampling, Epsilon-Greedy, or Upper Confidence Bound (UCB) that can adaptively handle uncertainty in the scores. The exploration strategy should be more aggressive during the initial time slots to gather diverse information, gradually shifting towards exploitation of the action with the highest average score as the `current_time_slot` progresses. Ensure the function outputs a single integer action index between 0 and 7, aiming to maximize cumulative rewards over time while incorporating a mechanism to adjust for the increasing certainty of action evaluations."
+          ],
+          "code": null,
+          "objective": -449.99999670487534,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that determines the most appropriate action index (0 to 7) based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should strike a balance between exploration and exploitation to optimize performance. Utilize a method like the Upper Confidence Bound (UCB), Thompson Sampling, or a dynamic epsilon-greedy approach that progressively favors actions with higher historical average scores while still giving a fair chance to less explored options, particularly during initial time slots. The strategy should account for the total number of selections to ensure diversity in action selection and prevent premature convergence on suboptimal actions. The function must return an integer corresponding to the selected action index, fostering continuous learning and allowing for adaptive strategy adjustments throughout the entire sequence of time slots."
+          ],
+          "code": null,
+          "objective": -449.9999964435038,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design a decision-making function that selects the optimal action index from the set {0, 1, 2, 3, 4, 5, 6, 7} using the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should effectively balance exploration of less frequently selected actions with the exploitation of those yielding higher average historical scores. Implement a strategy that adapts over time, such as epsilon-greedy, Upper Confidence Bound (UCB), or Thompson Sampling, ensuring that exploration is prioritized in the earlier time slots when data is limited, while gradually shifting focus to high-scoring actions as data accumulates. The exploration control should be dynamic, modulated by the number of selections made so far, with the objective of maximizing long-term rewards. The output of the function must be a single integer representing the selected action index (between 0 and 7) that best contributes to cumulative performance improvements."
+          ],
+          "code": null,
+          "objective": -449.99999537362726,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "  \nDesign an action selection function that determines the most suitable action index (0 to 7) based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a hybrid approach that balances exploration (trying less frequently selected actions) and exploitation (capitalizing on actions with higher average historical scores). Consider utilizing strategies like epsilon-greedy, Upper Confidence Bound (UCB), or Thompson Sampling to inform the selection process. The exploration component should be more pronounced during the initial time slots, allowing for data gathering, while gradually transitioning to exploitation as selection data accumulates. The ultimate output should be a single integer representing the selected action index (0-7) that aims to optimize cumulative rewards across the entire time horizon. Ensure the function is adaptive, statistically robust, and responsive to the evolving performance data, ultimately enhancing decision-making effectiveness.  \n"
+          ],
+          "code": null,
+          "objective": -449.99999466471684,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "  \nDesign a robust action selection function that chooses one action index (0 to 7) based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a balanced decision-making strategy that effectively combines exploration and exploitation. To achieve this, consider utilizing a multi-armed bandit approach such as epsilon-greedy, Upper Confidence Bound (UCB), or Thompson Sampling. The function should prioritize exploring less frequently selected actions at the beginning, gradually shifting focus to actions with higher average scores as more data is collected. Ensure that the selection process is adaptive, allowing for dynamic adjustments in exploration versus exploitation based on the accumulated selection history. The final output must be a single integer representing the selected action index (0-7) that optimizes long-term rewards across the time slots. The design should emphasize statistical rigor and responsiveness to changing data conditions to maximize decision-making efficacy.  \n"
+          ],
+          "code": null,
+          "objective": -449.9999941849983,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design a dynamic action selection function to efficiently choose an action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function must intelligently balance exploration of less-selected actions and exploitation of those with proven higher average scores. Consider implementing a strategy that appropriately adjusts its exploration rate over time, ensuring a robust initial exploration phase that gradually shifts towards leveraging historical success as data accumulates. Evaluate actions by their average score while incorporating metrics of selection frequency to guide decisions. The output should be an action index (0-7) that maximizes expected long-term rewards, with an emphasis on adaptability in response to evolving data over the course of the time slots."
+          ],
+          "code": null,
+          "objective": -449.9999923430403,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that intelligently selects an action index from the range of 0 to 7 using the following inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a robust strategy, like epsilon-greedy or Upper Confidence Bound (UCB), that prioritizes exploration of less frequently selected actions while also capitalizing on actions with higher average scores over time. It should consider both the average performance metrics from `score_set` and the selection frequency of each action to make data-driven choices. Specifically, the function should adapt its exploration and exploitation balance based on the current time slot, emphasizing exploration in the early stages when data is sparse. Ensure that the output is a single integer representing the chosen action index, which should be between 0 and 7, aiming to maximize cumulative rewards over time."
+          ],
+          "code": null,
+          "objective": -449.9999916071203,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               " \nDevelop an action selection function that intelligently selects an action index from a range of 0 to 7 given the following inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should effectively balance exploration\u2014by occasionally choosing less-frequently selected actions\u2014and exploitation\u2014by favoring actions that have historically performed better, based on their average scores. \n\nLeverage strategies like epsilon-greedy, Upper Confidence Bound (UCB), or Thompson Sampling to dynamically adjust the selection process, particularly during the early time slots where historical data may be limited. Ensure that the function computes average scores accurately from `score_set`, and incorporates both the performance metrics and the selection frequency to influence the probabilities of action selection. The output must be a valid action index, an integer between 0 and 7, designed to maximize long-term rewards by utilizing the historical performance data effectively. \n"
+          ],
+          "code": null,
+          "objective": -449.9999911450256,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an advanced action selection function that efficiently identifies the optimal action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a balanced exploration-exploitation strategy, such as a softmax approach or a Bayesian optimization technique, which not only prioritizes actions with higher average scores derived from `score_set` but also ensures adequate exploration of less frequently selected actions. The exploration level should dynamically adjust based on the `current_time_slot`; initially favoring exploration in early slots when data is scarce, and transitioning to a more exploitative strategy as `total_selection_count` increases and patterns emerge. The output should be a single integer, representing the chosen action index (0-7), with the goal of maximizing long-term cumulative rewards while adapting to evolving data trends."
+          ],
+          "code": null,
+          "objective": -449.9999898912797,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "  \nDesign an action selection function that effectively identifies an action index (0 to 7) based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a strategy that strikes a balance between exploration (trying less frequently chosen actions) and exploitation (favoring actions with higher historical scores). Consider utilizing methods like epsilon-greedy strategies, Upper Confidence Bound (UCB), or Thompson Sampling to enhance selection efficacy. The approach should prioritize exploration during the initial time slots to gather sufficient data and gradually shift towards exploitation as more selections are recorded. The output must be a single integer representing the selected action index (0-7) that aims to maximize long-term rewards while remaining adaptable to changes in the data distribution. Ensure methodological robustness and responsiveness to evolving conditions to optimize decision-making effectiveness and performance.  \n"
+          ],
+          "code": null,
+          "objective": -449.99998877726,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that efficiently chooses the most appropriate action from the set {0, 1, 2, 3, 4, 5, 6, 7} utilizing the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should adeptly balance exploration of less selected actions against exploitation of actions with higher average scores. Implement a strategy that leverages the Upper Confidence Bound (UCB) approach to evaluate the uncertainty of action performances while integrating an Epsilon-Greedy strategy to promote exploration during the initial time slots. As `current_time_slot` increments, gradually redirect emphasis towards actions demonstrating consistent performance to maximize cumulative rewards over the entire time horizon. Ensure the function evaluates historical performance data to calculate both the average scores and an uncertainty metric for each action. The output should be a single integer representing the selected action index (0 to 7), aiming to optimize long-term rewards across available time slots."
+          ],
+          "code": null,
+          "objective": -449.999988507434,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an efficient action selection function that selects an action index from the options {0, 1, 2, 3, 4, 5, 6, 7} based on the provided inputs: `score_set` (historical scores for each action), `total_selection_count` (overall selections made), `current_time_slot` (the present time slot), and `total_time_slots` (total available slots). The function should effectively balance exploration and exploitation by implementing a strategy such as Upper Confidence Bound (UCB) or Epsilon-Greedy. It should favor exploration of lesser-used actions in the initial time slots, when data is sparse, while gradually shifting toward actions with higher average scores as the total selection count increases and more information becomes available. Ensure the output is a valid action index (an integer between 0 and 7) that aims to maximize the cumulative reward as the selection process progresses through the time slots, accounting for the varying performance of each action over time."
+          ],
+          "code": null,
+          "objective": -449.999984017803,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               " \nDevelop an action selection function that intelligently selects an action index (ranging from 0 to 7) based on the performance data provided in `score_set`, the overall `total_selection_count`, the `current_time_slot`, and the `total_time_slots`. The function should implement a balanced decision-making strategy that harmonizes exploration of underutilized actions with the exploitation of actions that have historically yielded higher scores. Consider using methods such as epsilon-greedy, Upper Confidence Bound (UCB), or Thompson Sampling, with a strategic emphasis on maximizing long-term rewards. The design should prioritize exploration early in the time horizon when data is still sparse, progressively transitioning towards a focus on exploitation as more data is collected. The output should be a single integer representing the chosen action index (0-7), ensuring the methodology is robust and adaptive to changes in data trends, thus optimizing overall performance in scoring outcomes. \n"
+          ],
+          "code": null,
+          "objective": -449.9999833732864,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that efficiently selects an action index from a set of options (0 to 7) using the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should incorporate a method that consistently balances exploration and exploitation. Consider utilizing strategies like epsilon-greedy, Thompson Sampling, or Upper Confidence Bound (UCB) to make informed decisions. Emphasize selecting less-explored actions to foster exploration, while also leveraging the historical average scores from `score_set` to maximize returns. The strategy should be adaptive, favoring exploration in the initial time slots when information is scarce and gradually leaning towards exploitation as more data becomes available. The output should be a single integer representing the chosen action index (0-7), with the goal of maximizing cumulative rewards throughout the entire duration. Ensure the design is rooted in statistical analysis and reflects a data-driven approach to enhance performance."
+          ],
+          "code": null,
+          "objective": -449.999975655354,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Develop a robust action selection function that identifies the most suitable action index from the set {0, 1, 2, 3, 4, 5, 6, 7} using the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a sophisticated exploration-exploitation strategy, such as \u03b5-greedy, Thompson Sampling, or Upper Confidence Bound (UCB), to optimize action selection. Focus on the need for early exploration of less-frequent actions to gather essential data, while gradually shifting towards the actions that yield higher average rewards as the number of selections increases. Ensure the output is a valid action index (an integer from 0 to 7) that aims to maximize long-term rewards by intelligently adapting to the changing performance of each action throughout the time slots."
+          ],
+          "code": null,
+          "objective": -449.9999752344613,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               " \nDesign an action selection function aimed at maximizing scoring outcomes by selecting an action index (from 0 to 7) based on historical performance data contained within `score_set`, alongside `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should adeptly balance exploration and exploitation by incorporating advanced strategies such as epsilon-greedy, Upper Confidence Bound (UCB), or Thompson Sampling. It should favor exploration during the early time slots when actions have not been thoroughly evaluated, and smoothly shift towards exploitation as more data becomes available, thereby refining action selection. The output must be a single integer representing the chosen action index (0-7). Ensure that the design is adaptable, responsive to shifts in performance trends, and capable of optimizing long-term rewards effectively.\n"
+          ],
+          "code": null,
+          "objective": -449.999972870479,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design a versatile action selection function that efficiently picks an action index (ranging from 0 to 7) based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should employ a well-defined exploration-exploitation strategy, such as Epsilon-Greedy, UCB (Upper Confidence Bound), or Bayesian Optimization methods, to maintain a balance between experimenting with underutilized actions and capitalizing on historically high-scoring actions. The selection strategy should adapt dynamically to the progression of `current_time_slot`, promoting increased exploration in the initial stages when data is limited, and gradually shifting towards a focus on exploitation as more information becomes available. The output must be a single integer (from 0 to 7) that identifies the chosen action index, aiming to optimize cumulative rewards throughout the total time slots. Ensure that your implementation integrates statistical principles to enhance decision-making effectiveness and the overall success of the action selection process."
+          ],
+          "code": null,
+          "objective": -449.99997185340254,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Develop an action selection function that determines the optimal action index (0 to 7) from the given inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should utilize a robust strategy that balances exploration\u2014selecting less frequently chosen actions\u2014and exploitation\u2014favoring actions with higher historical average scores. Incorporate techniques such as epsilon-greedy, Upper Confidence Bound (UCB), or Thompson Sampling to achieve this balance. The strategy should emphasize exploration in the early time slots, when data is limited, and progressively shift towards exploitation as selection history informs decision-making. The output should be a single integer representing the selected action index (0-7), maximizing expected cumulative rewards by adapting to evolving scoring patterns in the input data. Ensure the approach is efficient and statistically valid, optimizing for both short-term and long-term performance."
+          ],
+          "code": null,
+          "objective": -449.9999717475739,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that determines the most suitable action index (0 to 7) based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a dynamic strategy that balances exploration and exploitation, such as epsilon-greedy, Upper Confidence Bound (UCB), or Thompson Sampling. It must encourage exploration of less frequently selected actions in the early time slots, while effectively leveraging historical performance data from `score_set` to favor actions with higher average scores as more data becomes available. The function should aim to maximize cumulative rewards throughout the entire time frame by adapting its selection strategy progressively. The output should be a single integer representing the chosen action index (0-7), ensuring a robust, data-driven approach underpinned by statistical principles for optimal performance across time slots."
+          ],
+          "code": null,
+          "objective": -449.9999537220994,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that dynamically chooses an action index from the range of 0 to 7 based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should effectively balance exploration of underutilized actions with exploitation of historically high-scoring actions. Implement a strategy, such as epsilon-greedy or Upper Confidence Bound (UCB), to foster exploration particularly during the early time slots when data is limited. The function needs to evaluate the performance metrics from `score_set`, considering both the average scores and how frequently each action has been chosen, to make informed decisions that enhance future rewards. Ultimately, ensure the function returns an integer representing the selected action index."
+          ],
+          "code": null,
+          "objective": -449.9999513696504,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that intelligently selects an action index from 0 to 7 using the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should leverage a blend of exploration and exploitation strategies to optimize decision-making. Consider implementing a method such as epsilon-greedy, Upper Confidence Bound (UCB), or Thompson Sampling to facilitate exploration of less selected actions while still prioritizing actions with strong historical performance. Make sure the function evaluates the average scores from `score_set` and incorporates the frequency of action selection to guide its choices. Provide a mechanism that adapts over time, increasing the reliance on historical data as `current_time_slot` progresses. Ensure the output is a valid integer between 0 and 7, representing the chosen action index."
+          ],
+          "code": null,
+          "objective": -449.99993531069464,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design a robust action selection function that intelligently identifies the optimal action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. This function should effectively balance exploration and exploitation to maximize long-term rewards. Incorporate a dynamic exploration strategy that favors high-performing actions while still exploring lesser-selected options, especially during earlier time slots. Potential strategies include Bayesian methods, epsilon-greedy with decaying epsilon, or Upper Confidence Bound (UCB), tailored to prioritize actions based on their historical average scores in `score_set`. Ensure that the exploration rate adapts as the selection count increases, gradually shifting focus from exploring to exploiting high-value choices. The output must be a single integer representing the selected action index, constrained within the range of 0 to 7, aimed at enhancing cumulative performance across time slots."
+          ],
+          "code": null,
+          "objective": -449.99993406145205,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Create an action selection function that efficiently identifies a suitable action index from the range of 0 to 7. The function should utilize the following inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The strategy should balance exploration of less frequently chosen actions with exploitation of those yielding higher average scores. Consider implementing an adaptive algorithm, such as epsilon-greedy or Upper Confidence Bound (UCB), that emphasizes exploring new options in the early time slots, while progressively focusing on actions with favorable historical performance as more data becomes available. The output should be a single integer representing the selected action index within the specified range, aiming to optimize cumulative rewards over the time slots. Ensure that the design is robust, data-driven, and capable of adjusting its exploration-exploitation trade-off dynamically based on the current context."
+          ],
+          "code": null,
+          "objective": -449.9998143520987,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that selects an action index (0 to 7) based on the input parameters: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should implement a balanced exploration-exploitation strategy, effectively leveraging historical scoring data while adapting to the total number of past actions taken. Consider using strategies such as Upper Confidence Bound (UCB) or a dynamic epsilon-greedy method that adjusts exploration based on the accumulated data. The algorithm should prioritize actions that demonstrate higher average performance over time while still incorporating opportunities to explore less-selected actions, particularly in the early time slots. The function must return an integer that denotes the selected action index, ensuring a continuous cycle of learning and adaptation across all time slots."
+          ],
+          "code": null,
+          "objective": -449.9995821819593,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "  \nDesign an action selection function that efficiently chooses an action index (from 0 to 7) based on the inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should incorporate a balanced exploration-exploitation strategy to effectively utilize historical data while still allowing for the discovery of potentially better actions. Implement a methodology such as Epsilon-Greedy or Upper Confidence Bound (UCB) that encourages sampling of less frequently chosen actions in earlier time slots, when data is limited, and gradually shifts to exploit the historically better-performing actions as the total selection count increases. The selection mechanism should also consider the diminishing returns of exploration over time, optimizing for cumulative rewards throughout all time slots. The output should return a single integer (between 0 and 7), representing the selected action index that maximizes expected returns, consistent with principles of decision theory and probabilistic modeling.  \n"
+          ],
+          "code": null,
+          "objective": -449.9995632151378,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an optimized action selection function that determines the best action index from the set {0, 1, 2, 3, 4, 5, 6, 7} based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should effectively balance exploration of lesser-selected actions with the exploitation of those that have historically performed better. Consider implementing techniques such as epsilon-greedy, Upper Confidence Bound (UCB), or Bayesian approaches to inform the selection process. The focus should be on maximizing long-term cumulative rewards by favoring actions with higher average scores while not neglecting less frequently tried options, especially in the early stages when data is still sparse. The exploration mechanism should adapt dynamically, increasing exploration during initial time slots and shifting towards exploitation as more data is accumulated. The output should be a single integer representing the chosen action index between 0 and 7 that optimally aligns with the goal of maximizing cumulative score over time."
+          ],
+          "code": null,
+          "objective": -449.99919917866794,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that optimally balances exploration and exploitation in order to maximize cumulative rewards across given time slots. Utilize the `score_set` to compute the average scores for each action based on the historical performance data provided. Implement a strategy that encourages exploration of less frequently chosen actions, especially in earlier time slots, to facilitate robust learning and information gathering. Additionally, adjust the selection probabilities based on `total_selection_count`, ensuring that more successful actions do not overshadow others excessively. As the `current_time_slot` progresses within the context of `total_time_slots`, dynamically refine the exploration-exploitation balance to enhance strategic adaptability. The function should return a single integer `action_index` (from 0 to 7), representing the selected action, with the goal of achieving both immediate results and sustained long-term performance improvements through informed decision-making."
+          ],
+          "code": null,
+          "objective": -449.99722260006894,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Develop an action selection function that effectively balances exploration and exploitation to maximize performance across specified time slots. Utilize the `score_set` to calculate the average score for each action based on historical data. Implement an exploration strategy that prioritizes selecting less frequently chosen actions, particularly during the initial time slots, to enhance learning and gather diverse information. Factor in the `total_selection_count` to adjust the selection probability of each action, ensuring that more favored actions do not dominate the choices excessively. Dynamically modulate the exploration rate as `current_time_slot` progresses relative to `total_time_slots`, enhancing opportunities for discovering effective strategies. The function must return a single integer `action_index` (from 0 to 7) that represents the chosen action, aiming for both immediate and long-term performance gains through a calculated and adaptive decision-making process."
+          ],
+          "code": null,
+          "objective": -448.7027002746134,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that intelligently chooses an action index from the range of 0 to 7 based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. This function should effectively balance the need for exploration of less-utilized actions and the exploitation of well-performing actions. Utilize a dynamic strategy, such as UCB (Upper Confidence Bound) or a modified epsilon-greedy approach, that adjusts the exploration-exploitation trade-off according to the total selection count and the historical performance captured in `score_set`. Ensure that the selection process becomes more exploitative as more data is collected while still allowing for exploration at the start and throughout the time slots. The output must be an integer representing the chosen action index, corresponding to the highest expected value based on both past scores and exploration needs."
+          ],
+          "code": null,
+          "objective": -446.5838363270361,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that dynamically balances exploration and exploitation to enhance decision-making across multiple time slots. The function should accept `score_set`, a dictionary where keys are action indices (0-7) and values are lists of historical scores, enabling the computation of average scores for each action. Implement a mechanism that favors the selection of less frequently chosen actions during earlier time slots to encourage diverse data collection. Utilize `total_selection_count` to influence the probability of selecting each action, ensuring a systematic decrease in exploration as the number of selections increases over `current_time_slot` in relation to `total_time_slots`. The output must be a single integer `action_index` (0-7) representing the chosen action. Strive for a balanced approach that not only prioritizes actions with high average scores but also retains the necessary flexibility to explore potentially better alternatives."
+          ],
+          "code": null,
+          "objective": -446.4963950700357,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Create an action selection function that efficiently balances exploration and exploitation to optimize decision-making across multiple time slots. The function should take `score_set`, a dictionary where keys represent action indices (0-7), and values are lists of historical scores, to compute the average score for each action. Incorporate a strategy that encourages the selection of less frequently chosen actions in earlier time slots to gather diverse data. Use `total_selection_count` to adjust the probability of selecting each action, ensuring that exploration decreases as more data is collected over `current_time_slot` in relation to `total_time_slots`. The output must be a single integer `action_index` (0-7) corresponding to the chosen action. Aim for a dynamic selection process that promotes immediate gains while progressively honing in on the most effective actions."
+          ],
+          "code": null,
+          "objective": -445.8144435181001,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design a robust action selection function that strategically balances exploration and exploitation to optimize action choice over defined time slots. The function should utilize `score_set` to compute average scores for each action, allowing for informed decision-making. Incorporate an exploration strategy that favors less frequently selected actions, especially in the earlier time slots, to gather more data and refine future choices. Use `total_selection_count` to inform the likelihood of selecting each action and adjust exploration dynamically according to `current_time_slot` relative to `total_time_slots`. The output must be a single integer `action_index`, ranging from 0 to 7, indicating the selected action. Focus on achieving an adaptive selection process that maximizes both immediate rewards and the long-term benefits of exploring untested options."
+          ],
+          "code": null,
+          "objective": -443.8998006980893,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that effectively balances exploration and exploitation among a set of 8 actions, indexed from 0 to 7. The function should utilize the provided `score_set`, which contains historical performance scores for each action, to compute average scores. Incorporate a mechanism to favor less frequently selected actions, especially in the early time slots, to enhance exploration of the action space. Adjust the exploration factor based on the ratio of `current_time_slot` to `total_time_slots`, allowing for a gradual shift towards exploitation as more selections are made. The output of the function must be an integer `action_index` representing the chosen action, ranging from 0 to 7. Aim to develop an approach that thoughtfully considers both immediate scores and potential long-term benefits of actions, ensuring a thorough exploration of the available options while capitalizing on successful strategies."
+          ],
+          "code": null,
+          "objective": -442.34997428372384,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Develop an action selection function that efficiently selects an action index from 0 to 7 based on the input parameters: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function must strike a balance between exploration and exploitation by analyzing historical performance data in `score_set` to determine the best-performing actions. To encourage exploration of less-frequented actions, especially during the initial time slots, incorporate a probabilistic approach such as epsilon-greedy or Thompson sampling. The selection should adapt over time, factoring in the total number of selections and the distribution of scores to maximize future rewards. Ensure the function outputs an integer corresponding to the chosen action index."
+          ],
+          "code": null,
+          "objective": -418.15509477491565,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that effectively balances exploration and exploitation to identify the optimal action from a predefined set of options at each time slot. The function should analyze the `score_set`, which contains historical scores for each action, to compute the average score for these actions. Implement a strategy that encourages the selection of lesser-chosen actions, particularly during the initial time slots, to enhance exploration. Use `total_selection_count` to evaluate the chances of selection for each action, and dynamically adjust the exploration mechanism based on the `current_time_slot` in relation to `total_time_slots`. The final output must be an integer `action_index`, ranging from 0 to 7, that signifies the chosen action. Aim for a selection process that adapively balances immediate rewards against the potential value of exploring new actions."
+          ],
+          "code": null,
+          "objective": -393.7434488150154,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that intelligently chooses an action from the provided `score_set`, alongside `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should calculate the average score for each action while implementing a dynamic epsilon-greedy strategy to effectively balance exploration of underutilized actions and exploitation of those yielding superior average scores. The epsilon value should decrease over time based on `current_time_slot`, thereby favoring exploitation as the total experience increases. Additionally, incorporate a mechanism to ensure that even the least selected actions are given a fair chance to be explored. The function must ensure that the chosen action index is strictly within the range of 0 to 7 and return the index as an integer."
+          ],
+          "code": null,
+          "objective": -386.9961262294094,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an adaptive action selection function that effectively balances exploration and exploitation over time. The function should utilize the `score_set` to compute the average scores for each action, while considering how often each action has been selected. Implement a strategy that encourages exploration in the earlier time slots by modifying selection probabilities based on `total_selection_count`. As time progresses, introduce a systematic decay approach that gradually increases the reliance on historical performance, prioritizing actions with higher average scores while still allowing for occasional exploration of less-favored options. The function must output an `action_index`\u2014an integer between 0 and 7\u2014reflecting the chosen action based on a thoughtful integration of performance data and exploration needs. Make sure to utilize both the `current_time_slot` and `total_time_slots` to facilitate this balance throughout the process."
+          ],
+          "code": null,
+          "objective": -336.469295858731,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that leverages both exploration and exploitation strategies to determine the optimal action from a given set of eight options (indexed from 0 to 7) at each designated time slot. The function should utilize the `score_set`, which contains historical performance data (average scores) for each action, to guide decision-making. Calculate the average score for each action and incorporate a mechanism to promote exploration of less frequently chosen actions, particularly in the early stages of the selection process. Utilize the `total_selection_count` to assess the frequency of selections across all actions and implement a dynamic adjustment in your exploration rates based on the progression through `current_time_slot` and `total_time_slots`. Ensure that the final output is an integer `action_index`, between 0 and 7, representing the selected action. Focus on creating a selection method that balances the pursuit of immediate rewards with the incentive to discover potentially more rewarding actions through exploration."
+          ],
+          "code": null,
+          "objective": -207.9090838620207,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that dynamically chooses the most suitable action from a set of 8 options while effectively balancing the need for exploration with the benefit of exploitation. The function must evaluate the `score_set`, which provides historical performance scores for each action, to calculate their average scores. Additionally, incorporate an exploration strategy that promotes the selection of less frequently chosen actions, especially during the early time slots, encouraging greater exploration of the action space. Utilize `total_selection_count` to gauge the relative frequency of action selections and adjust the exploration factor based on `current_time_slot` in relation to `total_time_slots`. The final output should be an integer `action_index` that indicates the selected action, ranging from 0 to 7. Strive for a method that intelligently weighs short-term rewards against the long-term potential of discovering optimal actions."
+          ],
+          "code": null,
+          "objective": 134.92302621262638,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that chooses an action index from 0 to 7 based on the provided inputs: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should effectively balance exploration and exploitation by evaluating the historical scores in `score_set`. Implement a strategy that encourages exploration of underutilized actions, particularly in the early time slots, through techniques like epsilon-greedy or softmax selection. The function must dynamically adapt its behavior as more actions are selected, using the total selection count and the distribution of score data to optimize long-term rewards. The output should be a single integer representing the chosen action index (from 0 to 7)."
+          ],
+          "code": null,
+          "objective": 599.9224627113629,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design a dynamic action selection function that effectively balances exploration and exploitation. The function should analyze `score_set`, calculating the average score for each action based on historical data, while also considering the frequency of action selections. Implement a strategy to promote exploration, particularly during the initial time slots, using `total_selection_count` to adjust the selection probabilities. Introduce a decay factor that gradually shifts focus from exploration to exploitation as `current_time_slot` progresses relative to `total_time_slots`. The function must return an `action_index`\u2014an integer between 0 and 7\u2014indicating the selected action based on these evaluations, ensuring both historical performance and exploration opportunities are factored into the decision-making process."
+          ],
+          "code": null,
+          "objective": 6063.441347601324,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that identifies the optimal action index between 0 and 7, utilizing the input parameters: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. Your function should effectively balance the trade-off between exploration and exploitation, leveraging historical performance data within `score_set` to guide selections. Implement a strategy such as epsilon-greedy or Upper Confidence Bound (UCB) to facilitate exploration of underutilized actions, particularly in the early time slots. Additionally, allow the function to evolve its selection strategy over time based on cumulative data from `total_selection_count` and performance metrics, aiming to maximize overall rewards in subsequent time slots. The function must return a single integer that corresponds to the selected action index."
+          ],
+          "code": null,
+          "objective": 6314.234955797034,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that uses a balance between exploration and exploitation to choose an action from a set of options. The function should evaluate `score_set`, which provides historical scores for each action, by calculating the average score for each action based on its historical data. Additionally, incorporate a mechanism to encourage exploration of less-selected actions, especially in the early time slots. Use `total_selection_count` to normalize the selection probability, adjusting the exploration tendency based on `current_time_slot` relative to `total_time_slots`. Finally, ensure the output is the selected `action_index`, which should be an integer from 0 to 7, representing the chosen action."
+          ],
+          "code": null,
+          "objective": 9330.540143720396,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that takes a `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots` as inputs to select the most appropriate action index (between 0 and 7) at each time slot. The function should balance exploration (trying less frequently selected actions) and exploitation (favoring actions with higher historical scores). Use the average score of each action from the `score_set` to guide exploitation while integrating a method for exploration, such as epsilon-greedy or softmax selection based on the total selection count. Ensure the function is efficient and straightforward, returning an integer action index based on the defined criteria."
+          ],
+          "code": null,
+          "objective": 9669.432095239821,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that utilizes the `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots` inputs to balance exploration and exploitation. The function should analyze the historical scores of each action to calculate their average performance while also considering the total number of selections to foster exploration of less frequently selected actions. Implement a strategy that allows for a probabilistic or threshold-based approach to favor actions with higher average scores while still giving a chance to explore actions with less historical data. The output must be an integer representing the index of the selected action (0-7). Focus on ensuring that the algorithm adapts over time as more selections are made."
+          ],
+          "code": null,
+          "objective": 10431.164960029993,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that efficiently selects an action from a provided `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should compute the average score for each action and employ a balanced epsilon-greedy strategy to promote both exploration of less frequently chosen actions and exploitation of those with higher average scores. Allow the epsilon value to decrease over time, influenced by the `current_time_slot`, promoting more exploitation as the model gains experience. Ensure that the selected action index falls within the range of 0 to 7. Output the index of the selected action as an integer."
+          ],
+          "code": null,
+          "objective": 10518.309822853565,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that chooses the most appropriate action from a set of eight options based on historical performance data while balancing exploration and exploitation. Begin by calculating the average score for each action from `score_set` to assess their past effectiveness. Incorporate a mechanism to encourage exploration, such as an epsilon-greedy approach, where a small percentage of the time, a random action is selected. Use the `total_selection_count` to normalize the scores and provide insight into each action's selection frequency, thereby mitigating the risk of overvaluing less frequently tried actions. Lastly, take into account the `current_time_slot` relative to `total_time_slots` to strategically adjust the exploration strategy as time progresses. The output should be the index of the selected action, ensuring it remains within the range of 0 to 7."
+          ],
+          "code": null,
+          "objective": 10786.90006871877,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Develop an action selection function that intelligently balances exploration and exploitation based on historical performance metrics. The function should utilize the `score_set` to compute the average scores for each action (indexed 0 to 7) while factoring in how many times each action has been previously selected. Incorporate a mechanism for encouraging exploration during the early stages (when `current_time_slot` is low), leveraging the `total_selection_count` to adjust the probability distribution. As `current_time_slot` advances toward `total_time_slots`, implement a diminishing exploration approach to gradually favor the actions with higher average scores. Ensure that the function outputs an `action_index` (an integer from 0 to 7) that reflects a well-balanced decision based on both historical performance data and exploration opportunities, striking an optimal balance to enhance long-term performance."
+          ],
+          "code": null,
+          "objective": 11397.27473969537,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that takes the provided `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots` as inputs to select an action index from 0 to 7. The function should balance exploration and exploitation: leverage the historical scores in `score_set` to identify the most effective actions while also incorporating a level of randomness to explore less-selected actions, especially in early time slots. Utilize a softmax approach or epsilon-greedy strategy to enable controlled exploration based on `total_selection_count` and the current state of action performance. Ensure the output is an integer representing the selected action index."
+          ],
+          "code": null,
+          "objective": 14437.016179355805,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an efficient action selection function that effectively balances the dual objectives of exploration and exploitation over a series of time slots. The function should take `score_set`, which contains historical scores for each action indexed from 0 to 7, to evaluate the average performance of each action. Implement a strategy that encourages trying less frequently selected actions in the early time slots while gradually shifting towards actions with higher average scores as more data becomes available. Use `total_selection_count` to quantify the selection frequency of each action and adjust the exploration mechanism based on `current_time_slot` relative to `total_time_slots`, ensuring that the exploration decreases as time progresses. The desired output is a single integer `action_index` between 0 and 7, representing the chosen action. Strive for a selection process that optimizes immediate rewards while ensuring the system adapts based on prior experiences to enhance future decision-making."
+          ],
+          "code": null,
+          "objective": 14753.601450748538,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that dynamically balances exploration and exploitation to determine the most suitable action from a fixed set of options at each time slot. The function should utilize the `score_set`, which contains historical performance data for each action, to calculate average scores and standard deviations. Implement a selection strategy that incorporates both the average performance of actions and their selection frequency. Prioritize exploring less frequently chosen actions in the early time slots to gather diverse data while gradually shifting focus to higher average scoring actions as more data accumulates. Leverage `total_selection_count` to inform the probability of selecting actions, ensuring that the exploration factor is adjusted based on `current_time_slot` relative to `total_time_slots`. The output should be an integer `action_index`, representing the chosen action (0 to 7). Strive for a selection mechanism that effectively balances short-term gains with the long-term benefits of exploring unfamiliar options."
+          ],
+          "code": null,
+          "objective": 15322.337238857102,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that adeptly balances exploration and exploitation across a set of 8 actions, indexed from 0 to 7. Utilize the provided `score_set` to compute the average scores for each action, considering both the performance metrics and the frequency of selections. Implement a dynamic exploration strategy that encourages the selection of less frequently chosen actions, particularly in the initial time slots, to promote a comprehensive exploration of the action space. As the `current_time_slot` progresses relative to the `total_time_slots`, gradually decrease the exploration factor to favor actions with higher historical average scores. The output should be an integer `action_index`, indicating the selected action, which must fall within the range of 0 to 7. Ensure the function incorporates a balanced consideration of short-term rewards and long-term action potential, fostering a strategic approach that effectively navigates both immediate gains and future opportunities."
+          ],
+          "code": null,
+          "objective": 15568.596282354283,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that takes a `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots` as inputs. The function should evaluate the average scores of each action in `score_set`, and use this information to balance exploration (trying less chosen actions) and exploitation (selecting actions with higher average scores). Implement an epsilon-greedy strategy where a small percentage of the time, the function selects a random action to explore while usually selecting the action with the highest average score. The result should be the index of the chosen action, ensuring it's an integer between 0 and 7. Consider including a mechanism to adjust epsilon dynamically based on `current_time_slot`."
+          ],
+          "code": null,
+          "objective": 18285.522393839998,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that balances exploration and exploitation using the provided `score_set` dictionary, `total_selection_count`, `current_time_slot`, and `total_time_slots`. First, compute the average score for each action in `score_set` to assess their historical performance. To encourage exploration, implement a strategy that incorporates a degree of randomness; for example, use an epsilon-greedy approach where with a small probability (epsilon), a random action is chosen instead of the one with the highest average score. As the total selection count increases, decrease epsilon to shift towards exploitation. Ensure the function returns an integer action index (0-7) based on this analysis, adjusting dynamically to current time slots to accommodate evolving strategies over time."
+          ],
+          "code": null,
+          "objective": 19647.083314110827,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that intelligently balances exploration and exploitation from a set of eight actions during each time slot. The function should consider the historical performance of each action as indicated by the `score_set`, evaluating their average scores to exploit high-performing options. Simultaneously, it should incorporate exploration by randomly selecting less-frequented actions to gather more data on their effectiveness. The exploration strategy might use a formula like epsilon-greedy, where the likelihood of random selection increases over time or is adjusted based on the `total_selection_count` and `current_time_slot` relative to `total_time_slots`. The output must be an integer index between 0 and 7, corresponding to the chosen action."
+          ],
+          "code": null,
+          "objective": 21375.833327310414,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that chooses the most suitable action from a predefined set of options while effectively balancing exploration and exploitation. The function should utilize the `score_set` dictionary to gauge historical performance of each action by analyzing the average score of previously selected actions. Incorporate the `total_selection_count` to facilitate exploration by amplifying the selection probabilities for less frequently chosen actions. Use the `current_time_slot` and `total_time_slots` to adjust the exploration rate dynamically, enabling a gradual shift towards exploitation as time progresses. The output must be a single integer that corresponds to the index of the selected action, ensuring it lies between 0 and 7. Prioritize actions with higher average scores, but maintain a mechanism for exploring alternatives to find potentially better-performing actions."
+          ],
+          "code": null,
+          "objective": 37888.290867719355,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that balances exploration and exploitation based on past performance. Utilize `score_set` to assess the average scores of each action, calculated as the mean of the historical scores. Incorporate a strategy such as \u03b5-greedy, where with a small probability (\u03b5), a random action is selected (exploration), while the remaining time slots prioritize the best-performing action based on historical averages (exploitation). Factor in `total_selection_count` to normalize the scores and consider `current_time_slot` and `total_time_slots` to introduce a temporal context for certain actions if needed. The output should be the selected action index, ensuring it remains within the bounds of 0 to 7."
+          ],
+          "code": null,
+          "objective": 55370.80750922391,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an adaptive action selection function that strategically balances exploration and exploitation in real-time decision-making. The function should process the `score_set` to compute the average score for each action, while also tracking the selection frequency of each action. Incorporate a dynamic exploration mechanism that encourages trying less frequently selected actions, especially in the early time slots. Utilize `total_selection_count` to modulate the exploration probability, ensuring that as `current_time_slot` increases relative to `total_time_slots`, there is a gradual transition towards favoring actions with higher historical performance. Implement a decay strategy to fine-tune this shift, enabling the function to effectively return an `action_index`\u2014an integer between 0 and 7\u2014that reflects both past successes and potential new opportunities, ensuring a balanced and informed selection process."
+          ],
+          "code": null,
+          "objective": 83258.84152178724,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Develop a robust action selection function that intelligently differentiates between exploration and exploitation based on historical performance metrics. The function should take `score_set`, which contains historical scores of actions indexed from 0 to 7, and calculate the average score for each action. It should also utilize `total_selection_count` to normalize selection probabilities, enhancing exploration in the early time slots. As `current_time_slot` approaches `total_time_slots`, incorporate a strategy to gradually decrease exploration, favoring actions with higher average scores. The output should be an `action_index`\u2014a valid integer from 0 to 7\u2014representing the chosen action, balancing the need for leveraging past successes while still allowing for the discovery of potentially better actions in future selections."
+          ],
+          "code": null,
+          "objective": 128128.60913298602,
+          "other_inf": null
+     },
+     {
+          "algorithm": [
+               "Design an action selection function that identifies the optimal action index (0 to 7) based on the provided parameters: `score_set`, `total_selection_count`, `current_time_slot`, and `total_time_slots`. The function should prioritize effective decision-making by balancing exploration of less-selected actions and exploitation of historically high-scoring actions. Implement a dynamic strategy, such as epsilon-greedy or softmax, to incorporate exploration during initial time slots while progressively favoring actions with stronger performance as `total_selection_count` increases. Ensure the chosen action is output as an integer corresponding to the selected action index, and consider a method to update action preferences based on accumulated scores to maximize expected future rewards. Aim for flexibility and adaptability in your approach for varying total time slots."
+          ],
+          "code": null,
+          "objective": 242722.43113229814,
+          "other_inf": null
+     }
+]
