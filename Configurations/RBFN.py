@@ -1,18 +1,4 @@
 # Radial basis function network
-# sigma             -spread rate
-#
-#### Authors: Pengfei Huang, Handing Wang, Yaochu Jin
-#### Xidian University, China and University of Surrey, United Kingdom.
-#### EMAIL: pfeihuang @ foxmail.com, hdwang @ xidian.edu.cn
-#### WEBSITE: https://sites.google.com/site/handingwanghomepage
-#### DATE: November 2020
-# ------------------------------------------------------------------------
-# This code is part of the program that produces the results in the following paper:
-#
-# Pengfei Huang,Handing Wang,Yaochu Jin,Offine Data-Driven Evolutionary Optimization Based on Tri-Training, Swarm and Evolutionary Computation, Accepted.
-#
-# You are free to use it for non-commercial purposes. However, we do not offer any forms of guanrantee or warranty associated with the code. We would appreciate your acknowledgement.
-# ------------------------------------------------------------------------
 
 import numpy as np
 from sklearn.cluster import KMeans
